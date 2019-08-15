@@ -10,14 +10,12 @@
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
-<<<<<<< HEAD
     <!-- 分割栏 -->
     
     <!-- 分割栏 -->
   
     <!-- 请求数据 -->
     
-=======
     <!-- 网易自营... -->
     <div class="indexServicePolicy">
       <div class="indexServicePolicy-item">
@@ -76,20 +74,16 @@
         </div>
       </div>
       
->>>>>>> 8c889dea42ae7b4349036070906754aa3e0e52de
   </div>
 </template>
 <script>
 import timecoubttime from "../widgets/timecoubttime.vue"
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
-<<<<<<< HEAD
 // import axios from 'axios'
 
-=======
 import axios from 'axios'
 import recommendswiper from "../widgets/recommendswiper.vue"
->>>>>>> 8c889dea42ae7b4349036070906754aa3e0e52de
 export default {
   
   components: {
