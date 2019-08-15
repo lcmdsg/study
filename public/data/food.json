@@ -1,0 +1,161 @@
+{
+    "midautumn": {
+        "title": "中秋好礼",
+        "desc": "九秋三五夕，此夕正秋中。",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/1f4c486661036101113476669aa95f9d.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "三层妆匣礼盒，经典广式月饼",
+                "describe": "茗月 月饼礼盒 50克*12枚",
+                "price": 358,
+                "discounts": "2件8.5折"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/248c0a8c7bcb692b07754b8db4996280.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "正宗桃山皮月饼，中秋风物",
+                "describe": "汐月 月饼礼盒 60克*8枚 ",
+                "price": 198,
+                "discounts": "新品",
+                "overflow": "2件8.5折"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8f526c829000f99aef760873d6bcbbf2.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "阴阳师中秋限定款，欧气达摩饼印",
+                "describe": "祈月 月饼礼盒 60克*8枚",
+                "price": 198,
+                "discounts": "2件8.5折"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/127a049435dd63f9be440429bae52bda.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "手工匠制，整粒蛋黄，中秋礼盒",
+                "describe": "弄月 蛋黄酥礼盒 60克*8枚",
+                "price": 138,
+                "discounts": "2件8.5折"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/b90c87ce29bf42064b3d805a09d0b1ac.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "可爱萌猪，予您美好中秋味",
+                "describe": "网易味央金猪迎秋礼盒 8枚装",
+                "price": 138,
+                "discounts": "新品",
+                "overflow": "特价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/16da3a3e056b5cc7a37b520801a449d6.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "产地直供，2019鲜美大闸蟹",
+                "describe": "大闸蟹家庭装礼券",
+                "price": 169,
+                "originPrice": 180,
+                "select": "4个规格",
+                "discounts": "新品",
+                "overflow": "特价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/7ed45f1bf5ab066d7e8adca84a57026a.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "正宗产地，秋蟹上市抢“鲜”",
+                "describe": "阳澄湖牌大闸蟹礼券",
+                "price": 698,
+                "select": "3个规格",
+                "discounts": "新品",
+                "overflow": "1件8.5折"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/b99a6a5a253cc1a8266deaf71ffa9d3a.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "绍兴出产，八年陈酿",
+                "describe": "特型黄酒 500毫升",
+                "price": 68,
+                "select":"2个规格"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/63e2dfeee90193c418648a7181f53b0f.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "一冬一酿，甘甜鲜爽",
+                "describe": "半甜型黄酒 720毫升",
+                "select": "2个规格",
+                "price": 58,
+                "originPrice":68,
+                "discounts": "超级闪购",
+                "overflow": "满4减1"
+            },
+            {
+                "imgSrc": "https://yanxuan.nosdn.127.net/a939fc640ed20e6af53b05dfbd081284.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "太湖糯米温润，桂香淡香清甜",
+                "describe": "桂花糯米酒 750毫升",
+                "price": 33,
+                "originPrice": 35,
+                "discounts": "特价",
+                "select": "2个规格"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/82da6cb37f56299a03e0d69aaed71879.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "核心产区出品，老熟醇厚",
+                "describe": "茅台镇的酒珍藏12 500毫升",
+                "price": 288,
+                "select": "3个规格"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/df32391be1b03403c38fef13b8168253.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "轻盈舒适，提升家人幸福感",
+                "describe": "大牌CAMUS定制，送礼佳选",
+                "select": "法国直采购",
+                "price": 328,
+                "originPrice":468,
+                "discounts": "特价",
+                "overflow":"加价购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/5b54ba39cca56e1e94b11de5bc354fe4.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "胶香浓郁，营养健康",
+                "describe": "阿胶糕礼盒 360克",
+                "select": "2个口味",
+                "price": 99,
+                "originPrice": 138,
+                "discounts": "特价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/2505a45ca03599f93572e0e6407228ba.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "凝丝成盏，缕缕柔滑",
+                "describe": "洁净燕窝（燕盏）",
+                "select": "马来西亚直采",
+                "price": 428
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/fc6f3058589d1f8d14027ae8905f388b.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "大连原产，海味珍品",
+                "describe": "淡干海参礼盒 80克（22-25头）",
+                "price": 1088
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/ced4387debe9850976bbc84f49d5c70f.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "当季新货，临安名产",
+                "describe": "臻果悠享山核桃仁礼盒 118克*3罐",
+                "price": 168
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/2e96bb060209f92790c33f0c996f7b02.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "三种武夷岩茶，品茗岩韵精华",
+                "describe": "茗家私享岩茶组合礼盒 8克*18袋",
+                "price": 399,
+                "discounts":"新品"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/f03ef872dde39a52383ac41a2b986193.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "春采灵芽，云间新茗，伴手好礼",
+                "describe": "2019江南四茗茶叶礼盒 50克*4盒",
+                "price": 480
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/1d7f2106b3837a6dc0fd7424d09b2b74.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "明前精品，狮峰头采，清新竹盒，礼赠嘉宾",
+                "describe": "2019明前精品西湖龙井礼盒50克*2罐",
+                "price": 888
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/69fafa028f1750f3631bba4814a3376b.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "岩茶精髓，岩韵显著",
+                "describe": "武夷岩茶 纯种大红袍100克",
+                "price": 2188,
+                "discounts": "2件8.5折"
+            }
+        ]
+    }
+}

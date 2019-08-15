@@ -1,0 +1,209 @@
+{
+    "hot": {
+        "title": "人气爆款",
+        "desc": "人气热销好物",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/56b33a41a3ce8caf3ac86b7ec6c05faa.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "优质精梳棉，立体剪裁更自在",
+                "describe": "男式基础平角内裤",
+                "select": "6色可选",
+                "price":59
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/9be72b135c1053cc429911e6146acded.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "10种颜色可选，柔软好心情",
+                "describe": "玩趣彩虹四季拖鞋 ",
+                "select": "10色可选",
+                "price": 19.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/3a475c2aa0224d8a9af82a5ea09cfdf0.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "41L适中容量，100%铝镁合金",
+                "describe": "20寸 全铝镁合金登机箱",
+                "price": 799
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/79640de310cc786d2101efa5c3c6096a.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "109升大容量 满足全家出行",
+                "describe": "28寸 纯PC“铝框”（非全铝）拉杆箱",
+                "price": 489,
+                "select":"9色可选"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/6522179d551678509393da4766d08886.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "MUJI制造商，法国麻质自然舒爽",
+                "describe": "清风 自然棉麻家居拖鞋",
+                "select": "4色可选",
+                "price": 29.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/f2bc7577aeb924e7ab3d45fd7eda1101.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "头层羊皮，后跟可踩更自在",
+                "describe": "女式软绵羊皮圆扣平底鞋",
+                "price": 319,
+                "select":"2色可选"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/a0b97d663f6a8b1557c38e0d96df57a5.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "干净素色圆领，青春感无限",
+                "describe": "男式精梳棉圆领短袖T恤衫",
+                "price": 49,
+                "select":"8色可选"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/12104f3d9828a3e11aedd70395ebb18a.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "经典品质POLO，大气应对各种场合",
+                "describe": "男式精梳棉经典POLO衫",
+                "price": 53.4,
+                "originPrice":89,
+                "discounts": "抄底优惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8d3311681c4fe84cb7b01d86041723d5.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "柔和贴身，全天候保持清爽舒适",
+                "describe": "男式天丝舒弹直筒牛仔裤3.0",
+                "select": "2色可选",
+                "price": 229
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/0ed1fff169b17f4e07dbbf0f50760661.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "甄选桑蚕丝，呈现珍珠般淡雅光泽",
+                "describe": "女式真丝典雅柔色短袖衬衫",
+                "price": 224,
+                "originPrice": 449,
+                "discounts": "抄底优惠",
+                "select": "3色可选"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/359bb1893c424bf72ce80502edb737f7.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "优秀亲肤力，清爽一整天",
+                "describe": "男式全棉干爽型宽松短袖T恤衫",
+                "price": 53.7,
+                "originPrice": 79,
+                "select":"6色可选",
+                "discounts": "抄底优惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/0c8cbfa42d229d50cbb9846e41be5d5f.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "轻盈舒适，提升家人幸福感",
+                "describe": "男/女轻弹云朵家居拖鞋",
+                "select": "4色可选",
+                "price": 9.9,
+                "discounts": "超值价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/a6a27fd3389d9059834742e2e98688ad.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "自带丝般光泽，高级感呼之欲出",
+                "describe": "女式基础双面丝光100%棉T恤",
+                "select": "4色可选",
+                "price": 83.3,
+                "originPrice": 119,
+                "discounts": "抄底优惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/1fde48166e65693204d87cb22cdcdb09.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "透气飞织，畅享自由舒适",
+                "describe": "追风 男式轻弹慢跑运动鞋",
+                "select": "3色可选",
+                "price": 199
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/868a4fa0fd858d5dca85bc873546e7aa.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "透气清爽，恍若“没穿鞋”的轻盈",
+                "describe": "男式轻软舒弹健步鞋升级款",
+                "select": "3色可选",
+                "price": 169
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/259fa36c723e00d9c8baef13645e03e7.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "AAA级抑菌，清爽舒适",
+                "describe": "3双/5双装 男式基础纯色抑菌船袜",
+                "price": 49.9,
+                "select":"4色可选"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/b869136c3abde7c48cd3806e41417cfb.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "100%纯棉，出行必备",
+                "describe": "5条装 女式纯棉免洗内裤 ",
+                "price": 19.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/fd33cd53c4f10d22070b86e617d85775.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "时尚外形 轻松背负",
+                "describe": "女式英伦轻雅双肩包升级款",
+                "price": 199,
+                "select":"3色2种规格"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/cba7ed4a23b72392a5097cbaadb633c3.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "鞋杯随脚型而变，舒适呵护",
+                "describe": "男/女 两带式软木拖鞋",
+                "price": 55.9,
+                "originPrice": 69.9,
+                "select":"2色可选",
+                "discounts": "抄底优惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/674d88b06d6a64ab1e841c89fa9a6ac9.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "活力冻龄，轻松穿出高级感",
+                "describe": "女式经典纯色polo裙升级款",
+                "price": 99.9,
+                "discounts": "超值价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/b3cd5c0580cce2ac3dd728d04055e92c.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "完整包覆，适搭紧身裤/裙不露痕迹",
+                "describe": "女式平角内裤",
+                "price": 19.9,
+                "discounts":"超值价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/27877ac707a50c330a6d32cb03150422.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "三段调节松紧，让鞋来适应你",
+                "describe": "鸣夏 男式运动休闲凉鞋",
+                "price": 135,
+                "originPrice":169,
+                "select":"2色可选",
+                "discounts":"抄底优惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/955746572a5c4c11f3faeacb56d1dbd4.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "足尖小蝴蝶，灵动少女心",
+                "describe": "女式蝴蝶结方头平底鞋",
+                "price": 329,
+                "select":"3色可选",
+                "discounts": "1件5折"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/02ea59e6266a48db6ad1e3af9aa171e1.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "精挑手工慢做，典雅大气",
+                "describe": "男式优质小牛皮手工正装鞋",
+                "price": 659,
+                "discounts": "超值价"
+
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/56b33a41a3ce8caf3ac86b7ec6c05faa.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "优质精梳棉，立体剪裁更自在",
+                "describe": "男式基础平角内裤",
+                "select": "6色可选",
+                "price":9.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/9be72b135c1053cc429911e6146acded.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "10种颜色可选，柔软好心情",
+                "describe": "玩趣彩虹四季拖鞋 ",
+                "select": "10色可选",
+                "price": 29.9,
+                "discounts": "超值价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/3a475c2aa0224d8a9af82a5ea09cfdf0.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "41L适中容量，100%铝镁合金",
+                "describe": "20寸 全铝镁合金登机箱",
+                "price": 1799
+            }
+        ]
+    }
+}

@@ -1,6 +1,6 @@
 <template>
     <div class="contentcontainer">
-        购物车
+        1323123
     </div>
 </template>
 <script>

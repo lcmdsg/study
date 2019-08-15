@@ -1,0 +1,130 @@
+{
+    "hots": {
+        "title": "爆款榜单",
+        "desc": "精选口碑尖货",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/ad27b7b25852626aba7362961d102bab.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "999+好评爆款，洁齿又护龈",
+                "describe": "全净皓齿变速式声波电动牙刷",
+                "price": 219
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/f9f37332e201eee130e1a0a7e311608e.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "复合酵素，“酵”醒全家衣物洁净",
+                "describe": "3kg/1kg 强力去污酵素洗衣液",
+                "price": 49.9,
+                "discounts": "超值价"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/0e0872f0d811eaf0bf9cf498a0f0d858.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "不含一滴水，整瓶酵母发酵液",
+                "describe": "深补水系列 活颜润肌水 195ml",
+                "price": 129
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/6f704491e50c8c8cea7a64cbbbde31fc.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "免手洗，解放双手新“净”界",
+                "describe": "洗脱一体不脏手懒人拖把",
+                "price": 149
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/ce92e90349e21a8f1622d8276b0ce4dd.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "水感保湿 肌肤透气“轻”负担",
+                "describe": "水感多效防晒凝露 SPF30 100g",
+                "price": 89.9,
+                "originPrice":109,
+                "discounts": "抄底特惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/33310fd00d8dcc451c1321d20ddc9e0b.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "轻盈雾感，唇色“釉”惑",
+                "describe": "小胖墩 丝绒哑光唇釉",
+                "price": 79,
+                "discounts": "APP特惠"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/85824fffc0fc2042b3d068a1a20b560f.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "网易员工人手一盒，销量稳居前三",
+                "describe": "6包/提 谷风一木3层软抽面巾纸",
+                "price": 16.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/c4f3434dc6f021dec0cbac1b000559bf.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "当肌立断，精准护肤",
+                "describe": "4款可选 赋活原液系列",
+                "price": 69.9,
+                "discounts": "APP特惠"                
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8ac97bbb708f0de34023ef7e5b9b5bad.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "萃自然之力 赋“膜”力新肌 ",
+                "describe": "10片装 植萃精华面膜 ",
+                "price": 59.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/516876b24186cb7256199be060cec7ec.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "240mm/280mm两种规格轻柔空气感",
+                "describe": "云感纯棉日用卫生巾",
+                "price": 16.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/501c338b1913aca227a3e4527338e19c.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "防滑防霉，能喝水的天然地垫",
+                "describe": "硅藻土浴室地垫",
+                "price": 99,
+                "select": "2色可选"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/28197eebe3a4a1f6c2a460e1cb2fcd9e.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "100%原木浆，融水即化",
+                "describe": "10卷/提 谷风一木3层小卷纸",
+                "price": 27.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8bd581edb9f867a6a6005e47a5f1beda.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "累计销量百万，洁齿必备基础款",
+                "describe": "日式和风声波式电动牙刷（可单买刷头）",
+                "price":129
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/aa2c4e3f463392cd6c825de7d6de6865.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "耐用节能，一键照亮细节美",
+                "describe": "指触LED子母化妆镜",
+                "select": "2色可选",
+                "price": 109
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/85ce658dd01d214f9c66747b956db067.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "Q弹水润 漾在唇间的娇嫩光泽",
+                "describe": "小方管系列 滋润唇膏",
+                "price": 89
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/08fdf5daff4640b92db8096cad7c26b9.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "深层净爽，“净”显型范",
+                "describe": "男士泡沫洗面奶 150ml/支",
+                "price": 59
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/415d0797d1a9c4095c25c3bcd34d59de.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "绵密泡沫，SPA级洁肤体验",
+                "describe": "女士泡沫洗面奶 150ml/支",
+                "price": 59
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8ca36663250713eaf6e2ae1dc5979d96.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "雾面透皙，水润持久好肤色",
+                "describe": "水光气垫精华粉底霜（含替换芯）",
+                "price": 239
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/c53ab70bd91a58ddc2ceaa8d2ac48177.png?imageView&quality=65&thumbnail=330x330",
+                "imgDesc": "一笔顺滑，三色礼遇惊艳雾感",
+                "describe": "little crayon 蜡笔唇膏套盒",
+                "price": 169,
+                "discounts":"1件5折"
+            }
+        ]
+    }
+}

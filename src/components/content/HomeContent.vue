@@ -2,10 +2,7 @@
   <div class="homeccc">
     <content-tab v-on:navclick="navclick"></content-tab>
     <div class="homecontainer">
-      
-        <component :is="componentId"></component>
-     
-      
+      <component :is="componentId"></component>
     </div>
   </div>
 </template>
@@ -41,7 +38,7 @@ export default {
   },
   methods: {
     navclick(i) {
-      console.log(i);
+      // console.log(i);
       switch (i) {
         case 0:
           this.componentId = "recommond";

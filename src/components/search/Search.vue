@@ -32,9 +32,8 @@ export default {
     flex-direction: row;
     /* justify-content: space-between; */
     align-items: center;
-    
     background: rgb(237, 237, 237);
-}
+  }
 .backto{
     width: 25px;
    

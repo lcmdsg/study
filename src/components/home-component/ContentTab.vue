@@ -22,19 +22,20 @@
     </div>
     <div class="nav-wrap" ref="navwrap">
       <div  class="nav-item"  v-for="(item,i) in tabList" :key="i" @click="navclick(i,$event)" :class="{'active1':i==index}">{{item}}</div>
-      <!-- <div class="nav-item"></div> -->
-      <div class="xiala" @click="xiala">
-        <img src="../../assets/jian-tou.png" />
-      </div>
+      <div class="nav-item-empty"></div>
     </div>
-    <div class="misscontent" v-if="seen">
-       <div class="xiala" @click="xiala">
-        <img src="../../assets/jian-tou.png" />
+     <div class="xiala" @click="xiala">
+        <img src="../../assets/jian-tou.png" :class="[rotate?'fa fa-arrow-down go':'fa fa-arrow-down aa']"/>
       </div>
+    <div class="shade" v-if="shadeshow">
+        <div class="misscontent" v-if="seen">
+        <!-- <div class="xiala" @click="xiala">
+        <img src="../../assets/jian-tou.png" :class="[rotate?'fa fa-arrow-down go':'fa fa-arrow-down aa']"/>
+        </div> -->
         <div class="misscontent-title">全部</div>
         <div class="misscontent-content">
           <div class="misscontent-each" v-for="(item,i) in tabList" :key="i" @click="navclick(i,$event)" :class="{'active2':i==index}">{{item}}</div>
-     
+        </div>
         </div>
     </div>
   </div>
@@ -56,20 +57,20 @@ export default {
         "全球特色"
       ],
       index: 0,
-      seen: false
+      seen: false,
+      rotate: false,
+      shadeshow:false
     };
   },
   methods: {
     xiala() {
       this.seen = !this.seen;
+      this.rotate = !this.rotate;
+      this.shadeshow = !this.shadeshow;
     },
     navclick(i, event) {
       this.index = i;
-      // console.log(i)
-      // console.log(this.index);
       this.$emit("navclick", i);
-      //     console.log(event.clientX);
-      //    console.log(this.$refs.navwrap.clientWidth);
       let distance =
         event.clientX - window.screen.width / 2 + event.target.clientWidth / 2;
       this.$refs.navwrap.scrollLeft += distance;
@@ -179,27 +180,36 @@ a:visited {
   font-size: 14px;
   flex-shrink: 0;
 }
+.nav-item-empty{
+   line-height: 28px;
+  height: 30px;
+  margin: 0 13px;
+  font-size: 14px;
+  flex-shrink: 0;
+  width: 10px;
+}
 .xiala {
-  z-index: 222;
+  z-index: 9999;
   width: 8%;
-  height: 24px;
+  height: 30px;
   position: fixed;
   right: 0px;
   background: #fff;
+  text-align: center;
+  line-height: 35px;
 }
 .xiala img {
-  width: 100%;
-  height: 100%;
-  
+  width: 50%;
+  height: 60%;
 }
 .misscontent {
-    z-index: 0;
-  position: relative;
+  z-index: 9999;
+  position: fixed;
   overflow: hidden;
   background-color: #fff;;
 }
 .el-collapse,.el-collapse-item {
-     z-index: -1;
+  z-index: 1;
 }
 .misscontent-title{
   padding-left: 20px;
@@ -224,5 +234,21 @@ a:visited {
   border-radius: 4px;
   font-size: 14px;
   background: white;
+}
+.aa {
+  transition: all 0.5s;
+}
+.go {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+.shade {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 47px;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
 }
 </style>
