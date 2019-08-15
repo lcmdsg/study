@@ -79,6 +79,11 @@ export default {
   vertical-align: top;
   padding-bottom: 1px;
 }
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 3px;
+  border-radius: 0;
+}
 .swiper-pagination-bullet-active {
   background: white;
 }
