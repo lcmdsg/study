@@ -61,6 +61,7 @@
       <recommendswiper></recommendswiper>
       <!-- 分割栏 -->
       <div class="dividerline"></div>
+      <!-- 限时抢购 -->
       <div class="timeshopping">
         <div class="timeshopping-head">
           <div class="timeshopping-head-left">
@@ -68,12 +69,18 @@
             <timecoubttime></timecoubttime>
           </div>
           <div class="timeshopping-head-right">
-              更多
+              更多>
           </div>
-          <div class="timeshopping-head-right"></div>
+        </div>
+        <div class="timeshopping-body">
+          <div class="eachshopping-item" v-for="(item,index) in timeshopList" :key="index">
+            <img :src="item.imgurl" alt="">
+            <span>{{item.newprice}}</span>
+            <span>{{item.oldprice}}</span>
+          </div>
         </div>
       </div>
-      
+       
   </div>
 </template>
 <script>
@@ -102,6 +109,7 @@ export default {
 },
   data() {
     return {
+      timeshopList:[],
         filllist:[],
       swiperimglist: [
         "https://yanxuan.nosdn.127.net/a4ee2a554b5b553e2165ef9a66766986.jpg?imageView&quality=75&thumbnail=750x0",
@@ -141,11 +149,11 @@ export default {
   },
   mounted() {
       
-    //   let that=this
-    // axios.get("../../../homeheadimgs/minicomponent.json").then(function(res) {
-    //   console.log(res.data.result);
-    //   that.filllist=res.data.result;
-    // });
+      let that=this
+    axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
+      console.log(res.data.list);
+      that.timeshopList=res.data.list
+    });
   },
 //   computed: {
 //     swiper() {
@@ -269,6 +277,14 @@ export default {
   width: 100%;
   height: 50px;
   display: flex;
+  justify-content: space-between;
   align-items: center
+}
+.timeshopping-head-left{
+  margin-left: 15px;
+  font-size: 20px
+}
+.timeshopping-head-right{
+  margin-right: 20px
 }
 </style>
