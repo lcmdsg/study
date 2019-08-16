@@ -37,6 +37,7 @@
         <div class="indexServicePolicy-item-font">48小时快速退款</div>
       </div>
     </div>
+<<<<<<< HEAD
     <!--十张小图片 -->
     <div class="carousel">
       <div class="eachcarousel" v-for="(item,index) in teniconsList" :key="index">
@@ -79,6 +80,58 @@
         <div class="timeshopping-head-right"></div>
       </div>
     </div>
+=======
+     <!--十张小图片 -->
+     <div class="carousel">
+       <div class="eachcarousel" v-for="(item,index) in teniconsList" :key="index">
+         <div class="eachcarousel-img"><img :src="item.imgurl" alt=""></div>
+         <div class="eachcarousel-font">{{item.imgname}}</div>
+       </div>
+     </div>
+     <!-- 一个GIF广告图 -->
+     <div class="advergif">
+       <img src="https://yanxuan.nosdn.127.net/f4e55920102eef630232f0f34b75cf2e.gif" alt="">
+     </div>
+     <!-- 9.9超值首发。。 -->
+     <div>
+       <div class="fourplate">
+         <div class="eachplate" v-for="(item,index) in fourpicList" :key="index">
+           <div class="eachplate-title">{{item.pictitle}}</div>
+           <div class="eachplate-name">{{item.picname}}</div>
+           <div class="eachplate-pic">
+             <img :src="item.picurl1" alt="">
+             <img :src="item.picurl2" alt="">
+           </div>
+         </div>
+       </div>
+     </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 轮播 -->
+      <recommendswiper></recommendswiper>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 限时抢购 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>限时购</span>
+            <timecoubttime></timecoubttime>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="timeshopping-body">
+          <div class="eachshopping-item" v-for="(item,index) in timeshopList" :key="index">
+            <img :src="item.imgurl" alt="">
+            <span>{{item.newprice}}</span>
+            <span>{{item.oldprice}}</span>
+          </div>
+        </div>
+      </div>
+       
+>>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
   </div>
 </template>
 <script>
@@ -104,7 +157,12 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
       filllist: [],
+=======
+      timeshopList:[],
+        filllist:[],
+>>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
       swiperimglist: [
         "https://yanxuan.nosdn.127.net/a4ee2a554b5b553e2165ef9a66766986.jpg?imageView&quality=75&thumbnail=750x0",
         "https://yanxuan.nosdn.127.net/fca5a6400454717c5b7d6c393071b307.jpg?imageView&quality=75&thumbnail=750x0",
@@ -210,6 +268,7 @@ export default {
     };
   },
   mounted() {
+<<<<<<< HEAD
     let that = this;
     axios.get("../../../homeheadimgs/minicomponent.json").then(function(res) {
       console.log(res.data.result);
@@ -221,6 +280,21 @@ export default {
   //       return this.$refs.mySwiper.swiper;
   //     }
   //   }
+=======
+      
+      let that=this
+    axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
+      console.log(res.data.list);
+      that.timeshopList=res.data.list
+    });
+  },
+  // computed: {
+  //   swiper() {
+  //     return this.$refs.mySwiper.swiper;
+  //   }
+  // }
+
+>>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
 };
 </script>
 <style>
@@ -335,6 +409,18 @@ export default {
   width: 100%;
   height: 50px;
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  justify-content: space-between;
+  align-items: center
+>>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
+}
+.timeshopping-head-left{
+  margin-left: 15px;
+  font-size: 20px
+}
+.timeshopping-head-right{
+  margin-right: 20px
 }
 </style>

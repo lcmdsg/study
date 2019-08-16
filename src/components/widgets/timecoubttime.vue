@@ -1,6 +1,8 @@
 <template>
   <div class="time-countdown">
-   {{hr}}:{{min}}:{{sec}}
+   <span>{{hr}}</span>:
+   <span>{{min}}</span>:
+   <span>{{sec}}</span>
   </div>
 </template>
            
@@ -18,7 +20,7 @@ export default {
   },
   methods: {
     countdown: function() {
-      const end = Date.parse(new Date("2019-8-16"));
+      const end = Date.parse(new Date("2019-8-17"));
       const now = Date.parse(new Date());
       const msec = end - now;
       let day = parseInt(msec / 1000 / 60 / 60 / 24);
@@ -40,15 +42,19 @@ export default {
 <style>
 
 .time-countdown{
-  font-size: 12px;
-  color: #f20c59;
-  border: 1px solid #f20c56;
-  border-radius: 4px;
-  width: 60px;
+  font-size: 14px;
+  color: black;
+  width: 100px;
   padding-bottom: 1px;
   margin-left: 2px;
   display: inline-block;
   vertical-align: middle;
   text-align: center
+}
+.time-countdown span{
+  color: white;
+   background: black;
+   display: inline-block;
+   border-radius: 4px;
 }
 </style>
