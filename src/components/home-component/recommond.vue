@@ -75,15 +75,181 @@
         <div class="timeshopping-body">
           <div class="eachshopping-item" v-for="(item,index) in timeshopList" :key="index">
             <img :src="item.imgurl" alt="">
-            <span>{{item.newprice}}</span>
-            <span>{{item.oldprice}}</span>
+            <div class="eachshopping-item-font">
+              <span class="eachshopping-item-newprice">{{item.newprice}}</span>
+              <span class="eachshopping-item-oldprice">{{item.oldprice}}</span>
+            </div>
           </div>
         </div>
       </div>
-       
+       <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 新品首发 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>新品首发</span>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="timeshopping-body">
+          <recommendmini v-for="(item,index) in newproductList" :key="index" :item="item"></recommendmini>
+        </div>
+      </div>
+       <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 人气推荐 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>人气推荐</span>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="popular-big">
+            <div class="popular-big-left">
+              <img src="https://yanxuan-item.nosdn.127.net/89d86a4e463115e366daf841b9bcff46.png?imageView&quality=65&thumbnail=280x280">
+            </div>
+            <div class="popular-big-right">
+              <div class="popular-big-right-special">抄底特惠</div>
+              <div class="popular-big-right-title">新色 奢华植鞣头层水牛皮席 凉席三件套</div>
+              <div class="popular-big-right-desc">三峡水牛头层皮，高端夏凉必备</div>
+              <div class="popular-big-right-price">1949</div>
+            </div>
+        </div>
+        <div class="populai-bottom">
+          <recommendmini v-for="(item,index) in popularList" :key="index" :item="item"></recommendmini>
+        </div>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 类目热销榜 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>类目热销榜</span>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="timeshopping-body">
+          <hotsell></hotsell>
+        </div>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 四个图 -->
+      <div class="walfare-body">
+         <walfare></walfare>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 品牌制造直供 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>品牌制造直供</span>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="manufacturing-body">
+          <manufacturing></manufacturing>
+        </div>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 专题精选 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>专题精选</span>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="manufacturing-body">
+          <projectselection></projectselection>
+        </div>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 众筹 -->
+      <div class="timeshopping">
+        <div class="timeshopping-head">
+          <div class="timeshopping-head-left">
+            <span>众筹</span>
+          </div>
+          <div class="timeshopping-head-right">
+              更多>
+          </div>
+        </div>
+        <div class="crowdfunding-body">
+          <crowdfunding></crowdfunding>
+        </div>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 最后四个相同组件部分 -->
+      
+      <div class="recommendlast-head">
+        <img src="https://yanxuan.nosdn.127.net/09272c0588454c163017bfd19eb932ca.jpg" alt="">
+      </div>
+      <div class="recommendlast-bottom">
+        <recommendlastfour v-for="(item,index) in lastfourlist1" :key="index" :item="item"></recommendlastfour>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <div class="recommendlast-head">
+        <img src="https://yanxuan.nosdn.127.net/4b09ac57ed87b992e40aad42c197fec6.jpg" alt="">
+      </div>
+      <div class="recommendlast-bottom">
+        <recommendlastfour v-for="(item,index) in lastfourlist2" :key="index" :item="item"></recommendlastfour>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <div class="recommendlast-head">
+        <img src="https://yanxuan.nosdn.127.net/37449fc9cea8f248ab9d06cbb048fe99.jpg" alt="">
+      </div>
+      <div class="recommendlast-bottom">
+        <recommendlastfour v-for="(item,index) in lastfourlist3" :key="index" :item="item"></recommendlastfour>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <div class="recommendlast-head">
+        <img src="https://yanxuan.nosdn.127.net/8179e09266b10cfc55d0c99dcfcc4f8e.jpg" alt="">
+      </div>
+      <div class="recommendlast-bottom">
+        <recommendlastfour v-for="(item,index) in lastfourlist4" :key="index" :item="item"></recommendlastfour>
+      </div>
+      <!-- 分割栏 -->
+      <div class="dividerline"></div>
+      <!-- 底部黑色 -->
+      <div class="bottom-black">
+        <div class="bottom-black-top">
+          <div class="bottom-black-download">下载APP</div>
+          <div class="bottom-black-download">电脑版</div>
+        </div>
+        <p class="bottom-bottom">网易公司版权所有 © 1997-2019</p>
+        <p class="bottom-bottom-bottom">食品经营许可证：JY13301080111719</p>
+      </div>
   </div>
 </template>
 <script>
+import recommendlastfour from "../widgets/recommendlastfour.vue"
+import crowdfunding from "../widgets/crowdfunding.vue"
+import projectselection from "../widgets/projectselection.vue"
+import manufacturing from "../widgets/manufacturing.vue"
+import walfare from "../widgets/walfare.vue"
+import hotsell from "../widgets/hotsell.vue"
+import recommendmini from "../widgets/recommendmini.vue"
 import timecoubttime from "../widgets/timecoubttime.vue"
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
@@ -94,10 +260,17 @@ import recommendswiper from "../widgets/recommendswiper.vue"
 export default {
   
   components: {
+    recommendlastfour,
+    crowdfunding,
+    projectselection,
+    manufacturing,
+    walfare,
     recommendswiper,
     swiper,
     swiperSlide,
-    timecoubttime
+    timecoubttime,
+    recommendmini,
+    hotsell
   },
   methods: {
   countDownS_cb: function (x) {
@@ -109,6 +282,12 @@ export default {
 },
   data() {
     return {
+      lastfourlist1:[],
+      lastfourlist2:[],
+      lastfourlist3:[],
+      lastfourlist4:[],
+      popularList:[],
+      newproductList:[],
       timeshopList:[],
         filllist:[],
       swiperimglist: [
@@ -150,10 +329,26 @@ export default {
   mounted() {
       
       let that=this
-    axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
+      axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
       console.log(res.data.list);
-      that.timeshopList=res.data.list
+      that.timeshopList=res.data.list;
     });
+      axios.get("../../../data/newproduct.json").then(function(res) {
+      console.log(res.data.newlist);
+      that.newproductList=res.data.newlist;
+    });
+    axios.get("../../../data/popularrecommend.json").then(function(res) {
+      console.log(res.data.newlist);
+      that.popularList=res.data.newlist;
+    })
+    ;
+    axios.get("../../../data/recommendlastfour.json").then(function(res) {
+      console.log(res.data.firstlist.newlist);
+      that.lastfourlist1=res.data.firstlist.newlist;
+      that.lastfourlist2=res.data.secondlist.newlist;
+      that.lastfourlist3=res.data.thirdlist.newlist;
+      that.lastfourlist4=res.data.forthlist.newlist;
+    })
   },
   // computed: {
   //   swiper() {
@@ -184,7 +379,6 @@ export default {
 .indexServicePolicy{
   width: 100%;
   background: white;
-  border-bottom: 1px solid red;
   height: 38px;
   display: flex;
   align-items: center;
@@ -282,9 +476,151 @@ export default {
 }
 .timeshopping-head-left{
   margin-left: 15px;
-  font-size: 20px
+  font-size:18px
 }
 .timeshopping-head-right{
   margin-right: 20px
+}
+.timeshopping-body{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.eachshopping-item{
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.3%;
+  padding-bottom:14px 
+}
+.eachshopping-item img{
+  width: 100%;
+  background: #F5F5F5
+}
+.eachshopping-item-font{
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.eachshopping-item-newprice{
+  color: #b4282d;
+  font-size: 16px;
+}
+.eachshopping-item-newprice::before{
+  content: "\A5";
+}
+.eachshopping-item-oldprice{
+  color: #7f7f7f;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.eachshopping-item-oldprice::before{
+  content: "\A5";
+}
+.popular-big{
+  display: flex;
+  width: 92%;
+  margin: 0 auto;
+  height: 150px;
+  background: #FEF0DF;
+}
+.popular-big-left{
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  background: url(https://yanxuan.nosdn.127.net/3235bc71e70f134b5499316fc74337d4.png);
+}
+.popular-big-left img{
+  width: 100%;
+}
+.popular-big-right{
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.popular-big-right-special{
+  padding: 2px;
+  transform: scale(.9);
+  font-size: 11px;
+  background: white;
+  color: #b4282d;
+  border: 1px solid red;
+  border-radius: 2px;
+  width: 56px;
+}
+.popular-big-right-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 190px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.popular-big-right-desc{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 190px;
+  color: #7F7F7F;
+  font-size: 13px;
+  margin-top: 2px;
+}
+.popular-big-right-price{
+  color: #b4282d;
+}
+.popular-big-right-price::before{
+  content: "\A5";
+  font-size: 15px;
+}
+.populai-bottom{
+  margin: 14px auto;
+  padding-left: 5px
+}
+.walfare-body{
+  margin: 15px 0;
+}
+.manufacturing-body{
+  margin-bottom: 15px;
+}
+.crowdfunding-body{
+  border-top: 1px solid #f5f5f5;
+  padding-bottom: 18px;
+}
+.recommendlast-lastfour{
+  display: flex;
+  overflow: auto
+}
+.bottom-black{
+  width: 100%;
+  height: 130px;
+  background: #414141
+}
+.bottom-black-top{
+  margin: 0 auto;
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-black-download{
+  text-align: center;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 30px;
+  border: 1px solid #999;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.bottom-bottom{
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  margin-top: 45px;
+}
+.bottom-bottom-bottom{
+   text-align: center;
+  font-size: 13px;
+  color: #999;
 }
 </style>
