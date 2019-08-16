@@ -1,6 +1,6 @@
 <template>
     <div>
-        购物车底部
+        haohuo
     </div>
 </template>
 <script>
@@ -8,3 +8,6 @@ export default {
     
 }
 </script>
+<style>
+    
+</style>

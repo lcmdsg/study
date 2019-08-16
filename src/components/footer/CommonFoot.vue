@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :class="{'hide':index==4}">
         <div class="tab-bar" >
             <div class="tab-bar-item" @click="menuClick(0)" :class="{'active':index==0}">
                 <img :src="index==0?'icon-images/home-on.jpg':'icon-images/home-off.jpg'" id="tab-bar-item-img" >
@@ -19,7 +19,7 @@
             </div>
             <div class="tab-bar-item" @click="menuClick(4)" :class="{'active':index==4}">
                 <img :src="index==4?'icon-images/user-on.jpg':'icon-images/user-off.jpg'" id="tab-bar-item-img">
-                <div class="tab-bar-title" :class="{'active':index==4}">我的</div>
+                <div class="tab-bar-title" :class="{'active':index==4}">个人</div>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@ export default {
         
         menuClick(index){
             store.commit("homeTabIndexChange",index)
-            console.log(index)
+            // console.log(index);
             if(index==0){
                 this.$router.push("/").catch(function(){
                     return ;
@@ -88,7 +88,7 @@ export default {
     align-items: center;
 }
 .tab-bar-item {
-
+    color: #666;
     width: 20%;
     flex-shrink: 0;
     display: flex;
@@ -105,6 +105,9 @@ export default {
     width: 100%;
 }
 .active{
-    color: #b4282d
+    color: #b4282d;
+}
+.hide{
+    display: none;
 }
 </style>

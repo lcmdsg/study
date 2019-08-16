@@ -4,13 +4,14 @@ import routes from "./components/router/index.js"
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import ElementUI from 'element-ui';
-
+import {  Icon } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 Vue.use(ElementUI);
-Vue.use(Vuex)
+Vue.use(Vuex);
+Vue.use(Icon);
 Vue.config.productionTip = false
 import store from "./components/store/index.js"
 
@@ -19,7 +20,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  console.log(to.path);
+  // console.log(to.path);
   if(to.path=="/"){
     store.commit("homeTabIndexChange",0)
   }

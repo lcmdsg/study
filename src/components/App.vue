@@ -1,16 +1,9 @@
 <template>
   <div>
-    
-   
     <keep-alive>
         <router-view></router-view>
     </keep-alive>
-    
-  <transition name="fade">
     <common-foot></common-foot>
-   </transition>
-    
-
   </div>
 </template>
 
@@ -35,7 +28,6 @@ export default {
   computed:{
     index(){
             return store.state.homeTabIndex;
-            
         }
   },
   
@@ -58,20 +50,4 @@ export default {
     flex-direction: column;
     
 }
-
-
-
-.aaa-enter-active {
-  transition: all .3s 
-}
-.aaa-leave-active {
-  transition: all .3s 
-}
-.aaa-enter,.aaa-leave-to
-{
-  transform: translateY(-50px);
- 
-}
-
-
 </style>
