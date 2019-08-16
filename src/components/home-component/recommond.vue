@@ -37,7 +37,6 @@
         <div class="indexServicePolicy-item-font">48小时快速退款</div>
       </div>
     </div>
-<<<<<<< HEAD
     <!--十张小图片 -->
     <div class="carousel">
       <div class="eachcarousel" v-for="(item,index) in teniconsList" :key="index">
@@ -80,7 +79,6 @@
         <div class="timeshopping-head-right"></div>
       </div>
     </div>
-=======
      <!--十张小图片 -->
      <div class="carousel">
        <div class="eachcarousel" v-for="(item,index) in teniconsList" :key="index">
@@ -131,7 +129,6 @@
         </div>
       </div>
        
->>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
   </div>
 </template>
 <script>
@@ -157,12 +154,8 @@ export default {
   },
   data() {
     return {
-<<<<<<< HEAD
-      filllist: [],
-=======
       timeshopList:[],
-        filllist:[],
->>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
+      filllist:[],
       swiperimglist: [
         "https://yanxuan.nosdn.127.net/a4ee2a554b5b553e2165ef9a66766986.jpg?imageView&quality=75&thumbnail=750x0",
         "https://yanxuan.nosdn.127.net/fca5a6400454717c5b7d6c393071b307.jpg?imageView&quality=75&thumbnail=750x0",
@@ -268,7 +261,6 @@ export default {
     };
   },
   mounted() {
-<<<<<<< HEAD
     let that = this;
     axios.get("../../../homeheadimgs/minicomponent.json").then(function(res) {
       console.log(res.data.result);
@@ -280,21 +272,6 @@ export default {
   //       return this.$refs.mySwiper.swiper;
   //     }
   //   }
-=======
-      
-      let that=this
-    axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
-      console.log(res.data.list);
-      that.timeshopList=res.data.list
-    });
-  },
-  // computed: {
-  //   swiper() {
-  //     return this.$refs.mySwiper.swiper;
-  //   }
-  // }
-
->>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
 };
 </script>
 <style>
@@ -409,12 +386,7 @@ export default {
   width: 100%;
   height: 50px;
   display: flex;
-<<<<<<< HEAD
   align-items: center;
-=======
-  justify-content: space-between;
-  align-items: center
->>>>>>> b260403fb7f5ca7bfa56d371e7a5bc06d2a1686f
 }
 .timeshopping-head-left{
   margin-left: 15px;
