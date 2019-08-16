@@ -7,7 +7,7 @@
         alt
       />
       <div class="content-list-wrap">
-        <div class="content-card" v-for="item in list" :key="item">
+        <div class="content-card" v-for="(item,index) in list" :key="index">
           <img class="card-img" :src="item.imgSrc" alt />
           <div class="card-title">{{item.title}}</div>
         </div>
