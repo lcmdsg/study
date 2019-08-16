@@ -7,6 +7,9 @@
         <div class="recommendmini-title">
             {{item.title}}<span class="recommendmini-price">{{item.price}}</span>
         </div>
+        <span class="recommendmini-special" v-if="(item.special)">
+            {{item.special}}
+        </span>
     </div>
 </template>
 <script>
@@ -16,11 +19,12 @@ export default {
 </script>
 <style>
     .recommendmini{
-        width: 28%;
+        width: 29%;
         /* border: 1px solid red; */
         position: relative;
         display: inline-block;
-        margin-left: 12px;
+        margin-left: 11px;
+        margin-bottom: 10px;
     }
     .goldenfont{
         width: 18px;
@@ -42,6 +46,7 @@ export default {
     }
     .recommendmini-title{
         padding: 6px;
+        padding-bottom: 2px;
         font-size: 13px;
     }
     .recommendmini-price{
@@ -49,5 +54,13 @@ export default {
     }
     .recommendmini-price::before{
         content:"\A5"
+    }
+    .recommendmini-special{
+        padding:1px 4px;
+        margin-left: 4px;
+        font-size: 11px;
+        color: #b4282d;
+        border: 1px solid #b4282d;
+        border-radius: 8px;
     }
 </style>
