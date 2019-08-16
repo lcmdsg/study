@@ -139,7 +139,6 @@ export default {
       ]
     };
   },
-<<<<<<< HEAD
   mounted() {
       
     //   let that=this
@@ -148,14 +147,12 @@ export default {
     //   that.filllist=res.data.result;
     // });
   },
-//   computed: {
-//     swiper() {
-//       return this.$refs.mySwiper.swiper;
-//     }
-//   }
-=======
+  // computed: {
+  //   swiper() {
+  //     return this.$refs.mySwiper.swiper;
+  //   }
+  // }
 
->>>>>>> 8c889dea42ae7b4349036070906754aa3e0e52de
 };
 </script>
 <style>
