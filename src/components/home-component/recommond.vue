@@ -155,11 +155,19 @@ export default {
       that.timeshopList=res.data.list
     });
   },
+<<<<<<< HEAD
 //   computed: {
 //     swiper() {
 //       return this.$refs.mySwiper.swiper;
 //     }
 //   }
+=======
+  // computed: {
+  //   swiper() {
+  //     return this.$refs.mySwiper.swiper;
+  //   }
+  // }
+>>>>>>> faedd8979c2fc7172dfb198d18410a95c89518c2
 
 };
 </script>
