@@ -23,8 +23,7 @@
 
       <!-- 内容 -->
       <div class="content-wrap">
-        <component :is="componentId">
-        </component>
+        <component :is="componentId"></component>
       </div>
     </div>
   </div>
@@ -36,12 +35,21 @@ import Recommend from "../category-component/Recommend.vue";
 import Cool from "../category-component/Cool.vue";
 import Vogue from "../category-component/Vogue.vue";
 import New from "../category-component/New.vue";
+import Life from "../category-component/Life.vue";
+import Clothing from "../category-component/Clothing.vue";
+import Drinks from "../category-component/Drinks.vue";
+import Cleaning from "../category-component/Cleaning.vue";
+import Child from "../category-component/Child.vue";
+import Travel from "../category-component/Travel.vue";
+import Digital from "../category-component/Digital.vue";
+import Characteristics from "../category-component/Characteristics.vue";
 
 export default {
   name: "categroyContent",
   data() {
     return {
       componentId: "Recommend",
+      index: 0,
       tabList: [
         "推荐专区",
         "夏凉专区",
@@ -55,18 +63,23 @@ export default {
         "运动旅行",
         "数码家电",
         "全球特色"
-      ],
-      index: 0
+      ]
     };
   },
-
   components: {
+    Recommend: Recommend,
     Cool: Cool,
     Vogue: Vogue,
     New: New,
-    Recommend: Recommend
+    Life: Life,
+    Clothing: Clothing,
+    Drinks:Drinks,
+    Cleaning:Cleaning,
+    Child:Child,
+    Travel:Travel,
+    Digital:Digital,
+    Characteristics:Characteristics
   },
-
   methods: {
     tabClick(index, event) {
       this.index = index;
@@ -83,8 +96,29 @@ export default {
         case 3:
           this.componentId = "New";
           break;
-        default:
-          this.componentId = "Recommend";
+        case 4:
+          this.componentId = "Life";
+          break;
+        case 5:
+          this.componentId = "Clothing";
+          break;
+        case 6:
+          this.componentId = "Drinks";
+          break;
+        case 7:
+          this.componentId = "Cleaning";
+          break;
+        case 8:
+          this.componentId = "Child";
+          break;
+        case 9:
+          this.componentId = "Travel";
+          break;
+        case 10:
+          this.componentId = "Digital";
+          break;
+        case 11:
+          this.componentId = "Characteristics";
           break;
       }
     }
@@ -112,6 +146,7 @@ export default {
   left: 0;
   top: 0;
   border-bottom: 1px solid rgb(237, 237, 237);
+  background: #fff;
 }
 
 .header-wrap {
@@ -143,6 +178,9 @@ export default {
 .content-nav {
   width: 81px;
   height: 100%;
+  position: fixed;
+  left: 0;
+  top: 44px;
 }
 
 .content-item {

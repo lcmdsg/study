@@ -1,0 +1,148 @@
+{
+    "completeList": [
+        {
+            "head": "精选美食",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/2a2c2b23bc8c0b937fbd18fa0d554e02.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "中秋好礼"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/8bbb63638e3d6563c60914b210466581.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "新品首发"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/b51b82b8b0047d3ff54aed5da313cb1e.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "好味精选"
+                }
+            ]
+        },
+        {
+            "head": "休闲零食",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/2e753a8f0977fd09a74ccea4f0c6192c.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "饼干糕点"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/6941ede8541ceeb432e8da16e200152b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "小食糖巧"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/18dc905db6c49fbf55b2709078875cdb.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "肉类零食"
+                }
+            ]
+        },
+        {
+            "head": "坚果蜜饯",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/46b5256193d052612ecb9fb22d7f4b88.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "坚果炒货"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/dfc7d79ca21ee0f55428c8be218da5d3.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "蜜饯果干"
+                }
+            ]
+        },
+        {
+            "head": "冲饮茗茶",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/8d4523c21259f514d378ad7431cd4a75.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "冲调饮品"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/bca0abf2150045990a0344da95f0a1a2.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "传统茗茶"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/e18dfb8a86e0a0b8ff8f3e8851826ea4.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "茗茶盒礼"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/c9a077fb274fc820412f1bfc0300c3e2.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "茶包花茶"
+                }
+            ]
+        },
+        {
+            "head": "滋补保健",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/0a66214a911887c854cb75e4112c07ed.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "滋补食材"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/65fa4fbdbff206271c27179844e9297a.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "保健品"
+                }
+            ]
+        },
+        {
+            "head": "酒水饮料",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/25428a7b8047d4e35ab58367bf44d030.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "乳品饮料"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/e2ec593d7d5feae8a2f227892d08b081.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "酒类"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/e486923c1ffa14ad47672c6d495be8ed.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "名酒馆"
+                }
+            ]
+        },
+        {
+            "head": "粮油调味",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/7ecc7eab5519a1bf49fd2b6f4ad433ec.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "米面粮油"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/7154cb8de296a6d6acb16022d2725189.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "方便食品"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/4daf3eb8c49f473596bb15a71edc510f.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "南北干货"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/339889b1f38aba8b4a63c472e782d1ee.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "调味酱菜"
+                }
+            ]
+        },
+        {
+            "head": "生鲜特色",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/bb14c226c7ad80d711a25346f2340267.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "水果蔬菜"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/d3e0c79acff00d7b481e003816d5c105.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "肉蛋海鲜"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/421bd94eaa1df4da1abdc40807490fc3.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "冷冻冷藏"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/0a35aef69fd20761d113f4dc54f4ef2c.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "网易黑猪"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/ed9fda295d73fa8bbd0b9ea428329c1b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "海外美食"
+                }
+            ]
+        }
+    ]
+}

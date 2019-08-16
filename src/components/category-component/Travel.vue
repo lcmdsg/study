@@ -3,13 +3,16 @@
     <div class="content-block">
       <img
         class="content-title-img"
-        src="http://yanxuan.nosdn.127.net/60ee2d259be8e1fb5d9e1178cb3d0b6a.png?imageView&thumbnail=0x196"
+        src="https://yanxuan.nosdn.127.net/dc1a495164dc517203f086356e4a6291.jpg?imageView&thumbnail=0x196"
         alt
       />
-      <div class="content-list-wrap">
-        <div class="content-card" v-for="(item,index) in list" :key="index">
-          <img class="card-img" :src="item.imgSrc" alt />
-          <div class="card-title">{{item.title}}</div>
+      <div v-for="(item,index) in completeList" :key="index">
+        <div class="content-list-head">{{item.head}}</div>
+        <div class="content-list-wrap">
+          <div class="content-card" v-for="(i,index) in item.list" :key="index">
+            <img class="card-img" :src="i.imgSrc" alt />
+            <div class="card-title">{{i.title}}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -20,16 +23,17 @@
 import axios from "axios";
 
 export default {
-  name: "new",
+  name: "travel",
   data() {
     return {
-      list: []
+      completeList: [],
+      list:[]
     };
   },
   created() {
     let that = this;
-    axios.get("../../../detail/new.json").then(function(res) {
-      that.list = res.data.result;
+    axios.get("../../../detail/travel.json").then(function(res) {
+      that.completeList = res.data.completeList;
     });
   }
 };
@@ -72,5 +76,14 @@ export default {
   font-size: 14px;
   color: #333;
   text-align: center;
+}
+
+.content-list-head {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 1px solid #d9d9d9;
 }
 </style>

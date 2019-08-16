@@ -1,0 +1,212 @@
+{
+    "completeList": [
+        {
+            "head": "当季热销",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/8b3e99e7cea51cd80f4b42d2c0bb19aa.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "人气爆款"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/196546c2daa9b16a11fbcf4a42d256a8.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "好物上新"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/ed76c7c598ca60d76fd0ca977198443e.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "抄底特惠"
+                }
+            ]
+        },
+        {
+            "head": "男装",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/f917b00b07445c46a1df90ccaff2a8de.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式T恤/POLO"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/10b0537e284e4eb89a9461e583d017db.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式衬衫"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/f1e21d15c5a7517cceab3282b913d32b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式裤装"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/690dee73a00b6922664f727b40a58a3b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式牛仔"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/08c14dbcfe72891c8b4847ee955f31a2.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式针织衫/卫衣"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/78ed53f4f67fef36e853fa4b93e644ba.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式外套"
+                }
+            ]
+        },
+        {
+            "head": "女装",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/088dbf130a3a36d30dd3d5005ab1794e.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式T恤/POLO"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/ef3a7edba4e60e6914d908935cf78e4b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式衬衫"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/596c27528f5c8a1e6e79de62b980e45c.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式裙装"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/55ddb8143c911ee1881a6205572c718e.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式裤装"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/2f4686765e77abf8213f2b0e127045be.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式牛仔"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/0ef620a3bec78c9e0bf961bc20ec7758.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式针织衫/卫衣"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/d852804e7ff506a531d70e26df73c878.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式外套"
+                }
+            ]
+        },
+        {
+            "head": "居家内衣",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/3be56628e69f3ab57df1e77d510fc662.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式家居服"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/ce2c93facbcc7e14f6e49b09f75bbb1c.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式家居服"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/8207750f810aea25e43c423e6de7f943.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式内裤"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/b330070087bb87cb7586bd4097aa5a65.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式内裤"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/59122ca632ba972f02d8621458da74c4.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女式内衣/文胸"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/8a8329955a6c0e02d511704dfa258bfe.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男式内衣"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/f850599cb9c99a523b0a88160da80eca.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "短袜/裤袜"
+                }
+            ]
+        },
+        {
+            "head": "鞋靴",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/d655c28b53da89fbb3cdccea864ba7ad.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男鞋"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/84f9feacc5082b398374bfd169395daf.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女鞋"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/05c3b4bce0dcd8f6629f11bcaa170c7b.jpg?imageView&quality=85&thumbnail=144x144",
+                    "title": "拖鞋"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/eedd6de98be2da9e63608b994035bf14.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "鞋配"
+                }
+            ]
+        },
+        {
+            "head": "箱包",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/dbc1125c627b106de9b3d078b97292fb.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "女士包袋"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/e8b034f63aac15198f971503a6370947.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "男士包袋"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/a94a5d317d289f01a93ee093c3975121.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "钱包及小皮件"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/638f6de1cfa9defef5468a952f4efcad.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "行李箱"
+                }
+            ]
+        },
+        {
+            "head": "首饰配件",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/f71fb103089059608e6bf5a9a4096033.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "奢华珠宝"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/1eb26c281fa9b7b9e386cfd5ce1d67a7.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "时尚饰品"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/52d449042bc437f6179935624f0c1056.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "腰带腕表"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/1359baf099192f2e58936a4e0c36662e.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "帽子发饰"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/1d653f706fb834937a3d1c29e5725618.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "眼镜墨镜"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/22fc713b43b8fe89960fd434b165049f.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "围巾手套"
+                }
+            ]
+        },
+        {
+            "head": "系列特辑",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/8ebf546b13d24f2dc3c08521b592313f.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "免烫系列"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/a9db6faaa689c4dfcc37ef80d0552b1a.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "棉麻系列"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/cc358f426cbe81d9e806c6b7c2fb64aa.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "真丝系列"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/674af56699e3ccf525f4d65b7bab5446.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "莫代尔系列"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/9f7531cbaa489ec85a91a3a7dae92e21.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "几何森林"
+                }
+            ]
+        }
+    ]
+}

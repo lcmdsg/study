@@ -28,7 +28,7 @@ export default {
   },
   created() {
     let that = this;
-    axios.get("../../../data/recommend.json").then(function(res) {
+    axios.get("../../../detail/recommend.json").then(function(res) {
       that.list = res.data.result;
     });
   }
@@ -37,6 +37,8 @@ export default {
 
 <style>
 .content-wrap {
+  position: static;
+  margin-left:40px;
   width: 333px;
   height: 100%;
 }
@@ -59,6 +61,7 @@ export default {
 .content-card {
   width: 80px;
   margin: 0 10px;
+  margin-bottom: 20px;
 }
 
 .card-img {

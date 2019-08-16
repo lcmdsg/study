@@ -20,7 +20,7 @@
 import axios from "axios";
 
 export default {
-  name: "recommend",
+  name: "vogue",
   data() {
     return {
       list: []
@@ -28,7 +28,7 @@ export default {
   },
   created() {
     let that = this;
-    axios.get("../../../data/vogue.json").then(function(res) {
+    axios.get("../../../detail/vogue.json").then(function(res) {
       that.list = res.data.result;
     });
   }
@@ -37,6 +37,8 @@ export default {
 
 <style>
 .content-wrap {
+  position: static;
+  margin-left:40px;
   width: 333px;
   height: 100%;
 }
@@ -59,6 +61,7 @@ export default {
 .content-card {
   width: 80px;
   margin: 0 10px;
+  margin-bottom: 20px;
 }
 
 .card-img {

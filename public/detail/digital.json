@@ -1,0 +1,132 @@
+{
+    "completeList": [
+        {
+            "head": "好货精选",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/dfa11d68dd73664b3de632630098f07b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "夏季热卖"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/1ca73b12b6338a54421add710d406364.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "甄选爆款"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/c9d30ae0dbc2c0537984e4f4b3ccec9f.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "颜值好物"
+                }
+            ]
+        },
+        {
+            "head": "个护电器",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/e6c44e8dd451090b324fe127e3e8616d.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "口腔护理"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/61d16210f6dfff72668ff425b79c7190.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "身体护理"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/2de6707340d511031a3fcb3d98ae770d.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "面部护理"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/117270efbbb5f5520dbc609dda5d5b44.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "头发护理"
+                }
+            ]
+        },
+        {
+            "head": "生活电器",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/60b81a88db0ea74270b8491a0a2b0802.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "两季电器"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/c650bffea04dd2749d04d9f63edae464.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "清洁电器"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/b0e72093d1d047bbd0de7b3160b1506c.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "衣物护理"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/0427066bea93d5639f1ba79672ab846b.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "空气调节"
+                }
+            ]
+        },
+        {
+            "head": "厨房电器",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/591fe5284130069a3e408517443a78dd.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "厨房电器"
+                }
+            ]
+        },
+        {
+            "head": "按摩电器",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/0a563ba0f5e2c9e75031f5f160aee9ae.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "按摩器"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/c29feeeaf53de7455c2d3220fd4c746f.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "按摩椅"
+                }
+            ]
+        },
+        {
+            "head": "智能生活",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/32481c037b206627d500daf078087ad7.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "智能家居"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/590c1c397c52cee5cc0d13c5ccd3dc34.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "智能出行"
+                }
+            ]
+        },
+        {
+            "head": "数码办公",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/47e953a95e4378907b131205ce3cbc45.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "3C数码"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/620d2c977da93f5130eb5aed639850a0.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "手机配件"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/09c8b36ba252b486eec081479606baa7.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "车载用品"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/9d635abb986bd40f217dba2ac67df7f2.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "办公文具"
+                }
+            ]
+        },
+        {
+            "head": "影音娱乐",
+            "list": [
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/a2170cc17ed18303f4f18949fea341b9.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "影音娱乐"
+                },
+                {
+                    "imgSrc": "http://yanxuan.nosdn.127.net/77847b8066205331eb22c9c363e3740e.png?imageView&quality=85&thumbnail=144x144",
+                    "title": "乐器"
+                }
+            ]
+        }
+    ]
+}
