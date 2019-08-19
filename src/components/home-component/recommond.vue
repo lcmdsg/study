@@ -348,7 +348,7 @@ export default {
       that.lastfourlist2=res.data.secondlist.newlist;
       that.lastfourlist3=res.data.thirdlist.newlist;
       that.lastfourlist4=res.data.forthlist.newlist;
-    })
+    })  
   },
   // computed: {
   //   swiper() {
@@ -361,6 +361,8 @@ export default {
 <style>
 
 .swiper-slide {
+  display: flex;
+  flex-shrink: 0;
   width: 100%;
 }
 .swiper-slide img {
