@@ -10,7 +10,7 @@
         <swiper-slide> 
             <div><recommendmini v-for="(item,index) in recommendswiperList2" :item="item" :key="index"></recommendmini></div>
         </swiper-slide> 
-        <swiper-slide> 
+        <swiper-slide>
             <div><recommendmini v-for="(item,index) in recommendswiperList3" :item="item" :key="index"></recommendmini></div>
         </swiper-slide> 
         <swiper-slide> 
@@ -33,7 +33,7 @@ export default {
       
       let that=this
     axios.get("../../../data/recommendmini.json").then(function(res) {
-      console.log(res.data.list1);
+      // console.log(res.data.list1);
       that.recommendswiperList1=res.data.list1;
       that.recommendswiperList2=res.data.list2;
       that.recommendswiperList3=res.data.list3;

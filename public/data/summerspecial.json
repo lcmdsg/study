@@ -1,0 +1,115 @@
+{
+    "buy": {
+        "imghead": "https://yanxuan.nosdn.127.net/15640407915873725.png",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/85824fffc0fc2042b3d068a1a20b560f.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "6包/提  谷风一木3层软抽面巾纸",
+                "discount": "新人专享价",
+                "discount2": "满减",
+                "price": 16,
+                "originprice": 16.9,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/df03eaa6d957998728e3c425b900401e.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "酸梅汤 350毫升*9瓶",
+                "discount2": "满件减",
+                "price": 38,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/f9f37332e201eee130e1a0a7e311608e.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "3kg/1kg 强力去污酵素洗衣液",
+                "discount2": "超值价",
+                "price": 49.9,
+                "quick": "立即抢购"
+            }
+        ]
+    },
+    "buy2": {
+        "imghead": "https://yanxuan.nosdn.127.net/15640408122983726.png",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/fe2a5ba875d3785b1d0b46ad4e85fbf0.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "超薄婴儿拉拉裤学步裤L30片*1包",
+                "discount2": "好货内部价",
+                "price": 55,
+                "originprice": 69,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/1979054e3a1c8409f10191242165e674.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "常温纯牛奶 250毫升*12盒*2提",
+                "discount": "新人专享价",
+                "discount2": "满折",
+                "price": 83.6,
+                "originprice": 88,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/4c876e91e4875faaa2db61b41a46a7c0.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "全价猫粮 1.8千克*1袋",
+                "discount": "新人专享价",
+                "price": 83.6,
+                "originprice": 88,
+                "quick": "立即抢购"
+            }
+        ]
+    },
+    "buy3": {
+        "imghead": "https://yanxuan.nosdn.127.net/15640408194743727.png",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/4c876e91e4875faaa2db61b41a46a7c0.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "全价猫粮 1.8千克*1袋",
+                "discount": "新人专享价",
+                "price": 83.6,
+                "originprice": 88,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8bd581edb9f867a6a6005e47a5f1beda.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "日式和风声波式电动牙刷（可单买刷头）",
+                "discount": "新人专享价",
+                "price":122,
+                "originprice": 129,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/85824fffc0fc2042b3d068a1a20b560f.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "6包/提  谷风一木3层软抽面巾纸",
+                "discount": "新人专享价",
+                "price": 16,
+                "originprice": 16.9,
+                "quick": "立即抢购"
+            }
+        ]
+    },
+    "buy4": {
+        "imghead": "https://yanxuan.nosdn.127.net/15640408256673728.png",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/a3e544cfe51e75d5257d112f6776345c.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "防串染洗衣吸色布",
+                "discount2": "超值价",
+                "price": 9.9,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/6a3b99bf1df1332916b3699df67f9955.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "日式和风简约无盖垃圾桶 11L",
+                "discount2": "超值价",
+                "price":9.9,
+                "quick": "立即抢购"
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/8dca16df0641eb8b37635ebab37b7701.png?imageView&thumbnail=200x200&quality=95",
+                "imgDesc": "日本制造 抽拉式标签收纳篮 3色可选",
+                "discount2": "超值价",
+                "price": 9.9,
+                "quick": "立即抢购"
+            }
+        ]
+    }
+}

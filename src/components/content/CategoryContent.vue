@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import Recommend from "../category-component/Recommend.vue";
 import Cool from "../category-component/Cool.vue";
 import Vogue from "../category-component/Vogue.vue";
@@ -81,7 +80,7 @@ export default {
     Characteristics:Characteristics
   },
   methods: {
-    tabClick(index, event) {
+    tabClick(index) {
       this.index = index;
       switch (index) {
         case 0:

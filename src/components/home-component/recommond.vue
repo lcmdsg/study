@@ -273,12 +273,7 @@ export default {
     hotsell
   },
   methods: {
-  countDownS_cb: function (x) {
-    console.log(x)
-  },
-  countDownE_cb: function (x) {
-    console.log(x)
-  }
+ 
 },
   data() {
     return {
@@ -330,20 +325,20 @@ export default {
       
       let that=this
       axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
-      console.log(res.data.list);
+      // console.log(res.data.list);
       that.timeshopList=res.data.list;
     });
       axios.get("../../../data/newproduct.json").then(function(res) {
-      console.log(res.data.newlist);
+      // console.log(res.data.newlist);
       that.newproductList=res.data.newlist;
     });
     axios.get("../../../data/popularrecommend.json").then(function(res) {
-      console.log(res.data.newlist);
+      // console.log(res.data.newlist);
       that.popularList=res.data.newlist;
     })
     ;
     axios.get("../../../data/recommendlastfour.json").then(function(res) {
-      console.log(res.data.firstlist.newlist);
+      // console.log(res.data.firstlist.newlist);
       that.lastfourlist1=res.data.firstlist.newlist;
       that.lastfourlist2=res.data.secondlist.newlist;
       that.lastfourlist3=res.data.thirdlist.newlist;
