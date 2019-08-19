@@ -1,0 +1,46 @@
+{
+    "goods": {
+        "imghead": "https://yanxuan.nosdn.127.net/15656875555035346.jpg",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/0c8cbfa42d229d50cbb9846e41be5d5f.png?imageView&thumbnail=226y226&quality=95",
+                "imgDesc": "男/女轻弹云朵家居拖鞋",
+                "price": 9.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/9be72b135c1053cc429911e6146acded.png?imageView&thumbnail=226y226&quality=95",
+                "imgDesc": "玩趣彩虹四季拖鞋",
+                "plummet": "1",
+                "price": 18.9,
+                "originprice": 19.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/622f2bd775e32536b0085013b9198ae2.png?imageView&thumbnail=226y226&quality=95",
+                "imgDesc": "男/女 舒弹按摩家居拖鞋",
+                "price": 19.9
+            }
+        ]
+    },
+    "goods2": {
+        "imghead": "https://yanxuan.nosdn.127.net/15656881495985348.jpg",
+        "list": [
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/85824fffc0fc2042b3d068a1a20b560f.png?imageView&thumbnail=226y226&quality=95",
+                "imgDesc": "6包/提  谷风一木3层软抽面巾纸",
+                "price": 16,
+                "originprice":16.9,
+                "plummet":0.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/b5e2ea4932f713e1a76abb0d973311a7.png?imageView&thumbnail=226y226&quality=95",
+                "imgDesc": "12包/条 谷风一木4层印花手帕纸",
+                "price": 5.9
+            },
+            {
+                "imgSrc": "https://yanxuan-item.nosdn.127.net/28197eebe3a4a1f6c2a460e1cb2fcd9e.png?imageView&thumbnail=226y226&quality=95",
+                "imgDesc": "10卷/提 谷风一木3层小卷纸",
+                "price": 27.9
+            }
+        ]
+    }
+}

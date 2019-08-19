@@ -6,7 +6,7 @@ import Vuex from 'vuex'
 import ElementUI from 'element-ui';
 import {  Icon } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
+import vueSwiper from 'vue-awesome-swiper';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.css';
 Vue.use(VueAwesomeSwiper)
@@ -14,6 +14,7 @@ Vue.use(VueRouter);
 Vue.use(ElementUI);
 Vue.use(Vuex);
 Vue.use(Icon);
+Vue.use(vueSwiper)
 Vue.config.productionTip = false
 import store from "./components/store/index.js"
 
