@@ -9,7 +9,8 @@
             "special": "新人专享价",
             "nowprice": "83.6",
             "oldprice": "88",
-            "color":"#EBB237"
+            "color":"#EBB237",
+            "count":1
         },
         {
             "number": "2",
@@ -21,7 +22,8 @@
             "special": "好货内部价",
             "nowprice": "69.9",
             "oldprice": "99",
-            "color":"#A7B6C9"
+            "color":"#A7B6C9",
+            "count":1
         },
         {
             "number": "3",
@@ -33,7 +35,8 @@
             "special": "新人专享价",
             "nowprice": "122",
             "oldprice": "129",
-            "color":"#C28851"
+            "color":"#C28851",
+            "count":1
         },
         {
             "number": "4",
@@ -44,7 +47,8 @@
             "characteristic": "勐海熟普邂逅新会鲜柑",
             "special": "新人专享价",
             "nowprice": "68",
-            "oldprice": "85"
+            "oldprice": "85",
+            "count":1
         },
         {
             "number": "5",
@@ -56,7 +60,8 @@
             "special": "新人专享价",
             "nowprice": "68",
             "oldprice": "85",
-            "color":"#DACEBE"
+            "color":"#DACEBE",
+            "count":1
         },
         {
             "number": "6",
@@ -68,7 +73,8 @@
             "special": "新人专享价",
             "nowprice": "68",
             "oldprice": "85",
-            "color":"#DACEBE"
+            "color":"#DACEBE",
+            "count":1
         },
         {
             "number": "7",
@@ -80,7 +86,8 @@
             "special": "新人专享价",
             "nowprice": "68",
             "oldprice": "85",
-            "color":"#DACEBE"
+            "color":"#DACEBE",
+            "count":1
         }
 
     ]

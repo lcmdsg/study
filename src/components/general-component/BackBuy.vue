@@ -36,18 +36,25 @@
                         <img src="../../assets/halflove.png" alt=""></span></div>
                         <div class="rankinglist-list-bottom-price"><span class="rankinglist-list-newprice">{{item.nowprice}}</span><span class="rankinglist-list-oldprice">{{item.oldprice}}</span></div>
                     </div>
-                    <img class="rankinglist-list-cart" src="https://yanxuan.nosdn.127.net/15453626764930297.png" alt="">
+                    <img @click="addGood(item)" class="rankinglist-list-cart" src="https://yanxuan.nosdn.127.net/15453626764930297.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+import store from "../store/index.js"
 import axios from "axios"
 export default {
+    store:store,
     data(){
         return{
             rankinglist:[],
+        }
+    },
+    methods: {
+        addGood(item){
+            this.$store.commit("addGood", item);
         }
     },
     mounted(){
