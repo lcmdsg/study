@@ -89,17 +89,10 @@
 </template>
 <script>
 import axios from "axios";
-import "swiper/dist/css/swiper.css";
-import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
   components: {
-    swiper,
-    swiperSlide
   },
   computed: {
-    swiper() {
-      return this.$refs.mySwiper.swiper;
-    }
   },
   data() {
     return {
