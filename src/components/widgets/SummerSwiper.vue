@@ -15,7 +15,16 @@
         <img src="https://mimg.127.net/hz/uploader/20190802/15647346335080518.jpg" alt />
       </swiper-slide>
       <swiper-slide class="slide">
-        <img src="https://yanxuan.nosdn.127.net/15651700346213301.jpg" alt />
+        <img src="https://mimg.127.net/hz/uploader/20190806/15650581426442202.jpg" alt />
+      </swiper-slide>
+      <swiper-slide class="slide">
+        <img src="https://mimg.127.net/hz/uploader/20190806/15650581284712201.jpg" alt />
+      </swiper-slide>
+      <swiper-slide class="slide">
+        <img src="https://mimg.127.net/hz/uploader/20190729/15643681791925643.jpg" alt />
+      </swiper-slide>
+      <swiper-slide class="slide">
+        <img src="https://yanxuan.nosdn.127.net/15640224029953333.jpg" alt />
       </swiper-slide>
     </swiper>
     <!-- swiper2 Thumbs -->
@@ -34,6 +43,15 @@
       </swiper-slide>
       <swiper-slide class="slide-small">
         <img src="../../assets/suoluetu-5.png" alt />
+      </swiper-slide>
+      <swiper-slide class="slide-small">
+        <img src="../../assets/suoluetu-6.png" alt />
+      </swiper-slide>
+      <swiper-slide class="slide-small">
+        <img src="../../assets/suoluetu-7.png" alt />
+      </swiper-slide>
+      <swiper-slide class="slide-small">
+        <img src="../../assets/suoluetu-8.png" alt />
       </swiper-slide>
     </swiper>
   </div>
@@ -81,17 +99,18 @@ export default {
   width: 100%;
 }
 
-.slide img{
-    width: 100%;
-    height: 100%;
+.slide img {
+  width: 100%;
+  height: 100%;
 }
-.slide-small{
-    width: 70px;
-    height: 70px;
+.slide-small {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
 }
-.slide-small img{
-    width: 100%;
-    height: 101%;
+.slide-small img {
+  width: 100%;
+  height: 101%;
 }
 .gallery-thumbs {
   box-sizing: border-box;
@@ -99,6 +118,6 @@ export default {
 }
 
 .gallery-thumbs .swiper-slide-active {
-  background-color: rgb(255, 104, 110)
+  background-color: rgb(255, 104, 110);
 }
 </style>

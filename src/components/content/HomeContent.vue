@@ -4,6 +4,7 @@
     <div class="homecontainer">
       <component :is="componentId"></component>
     </div>
+    <img src="../../assets/back-to-top.png" class="to-top" @click="backTop()" alt />
   </div>
 </template>
 <script>
@@ -21,20 +22,26 @@ export default {
   data: function() {
     return {
       componentId: "recommond",
-      transcontent:"left"
+      transcontent: "left"
     };
   },
   components: {
     "content-tab": ContentTab,
-     recommond,
+    recommond,
     cloths,
-     family,
+    family,
     food,
     clean,
     mother,
     sport,
     digital,
     feature
+  },
+  mounted() {
+    window.addEventListener("scroll", this.scrollToTop);
+  },
+  destroyed(){
+    window.addEventListener("scroll", this.scrollToTop);
   },
   methods: {
     navclick(i) {
@@ -48,7 +55,7 @@ export default {
           break;
         case 2:
           this.componentId = "cloths";
-          break;  
+          break;
         case 3:
           this.componentId = "food";
           break;
@@ -71,19 +78,27 @@ export default {
           this.componentId = "recommond";
           break;
       }
-      if(this.i<i){
-        this.transcontent="left"
-      }else{
-        this.transcontent="right";
+      if (this.i < i) {
+        this.transcontent = "left";
+      } else {
+        this.transcontent = "right";
       }
-      this.i=i;
+      this.i = i;
+    },
+    backTop() {
+      document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
   }
 };
 </script>
 <style >
-.homeccc{
-  position:fixed;
+.to-top {
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+}
+.homeccc {
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -93,23 +108,26 @@ export default {
   bottom: 54px;
   width: 100%;
   position: absolute;
-overflow: auto
+  overflow: auto;
 }
 
-
-.left-enter-active,.right-enter-active{
-  transition: transform .5s;
+.left-enter-active,
+.right-enter-active {
+  transition: transform 0.5s;
 }
-.left-leave-active,.right-leave-active{
-  transition: transform .5s;
+.left-leave-active,
+.right-leave-active {
+  transition: transform 0.5s;
 }
 /* .left-enter, .left-leave-active,.right-enter, .right-leave-active {
   opacity: 0;
 } */
-.left-enter ,.right-leave-to{
+.left-enter,
+.right-leave-to {
   transform: translateX(100%);
 }
-.left-leave-to,.right-enter {
+.left-leave-to,
+.right-enter {
   transform: translateX(-100%);
 }
 </style>
