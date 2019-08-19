@@ -68,7 +68,7 @@ export default {
   width: 100%;
   margin: 10px 0;
   padding: 18px 15px;
-        position: relative;
+  position: relative;
 }
 
 .content-flex {
@@ -79,11 +79,12 @@ export default {
 .content-left {
   width: 220px;
   margin-right: 10px;
-      position: relative;
+  position: relative;
 }
 
 .content-right {
   width: 150px;
+  height: 150px;
   border-radius: 4px;
 }
 
@@ -130,9 +131,9 @@ export default {
   margin-bottom: 10px;
 }
 
-.content-foot{
-    position: absolute;
-    bottom: 0;
+.content-foot {
+  position: absolute;
+  bottom: 0;
 }
 
 .content-imgs {
