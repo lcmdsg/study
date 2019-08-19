@@ -53,7 +53,7 @@ export default {
     mounted(){
      let that=this
       axios.get("../../../data/backbuy.json").then(function(res) {
-      console.log(res.data.list);
+    //   console.log(res.data.list);
         that.rankinglist=res.data.list;
   })
     }
