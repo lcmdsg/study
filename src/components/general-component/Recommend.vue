@@ -60,17 +60,11 @@
             <div class="gerneral-recommend-c">
                 <div class="gerneral-recommend-a-title">{{item.title}}</div>
                 <div class="gerneral-recommend-a-change">
-                     <el-carousel :interval="4000" type="card" >
-                        <el-carousel-item v-for="(item1) in item.imgurl" :key="item1">
+                     
+                        <div class="gerneral-recommend-a-changeimg" v-for="(item1) in item.imgurl" :key="item1">
                             <img :src="item1" alt="">
-                        </el-carousel-item>
-                    </el-carousel>
-                        <!-- <swiper class="problem_title" :options="swiperOption" ref="gerneral-recommend-a-change">
-                            <swiper-slide v-for="(item1) in item.imgurl" :key="item1" >
-                            <img :src="item1" alt="">
-                            </swiper-slide>
-                            <div class="swiper-pagination" slot="pagination"></div>
-                        </swiper> -->
+                        </div>
+        
                 </div>
                 <div class="gerneral-recommend-a-person">
                     <div class="gerneral-recommend-a-person-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAAXNSR0IArs4c6QAAAgFJREFUSA3FVk1LAkEYbtdYNCHK6BJdrKNg+UFElyIoirp1Kgg8RD8hO3osj9GlguhSXjqW1SHqGOFHCeIpvXgUC8IURe15xZFp21mXKBuYnXfer2ffmWdmV+oy0CKRSI8syyv1en0Z7qPoI82wNHRp2C5qtdq51+v9aJdO0nNIJBL95XI5AB8fei+6XnuH8cRisQQcDkde5CgEjEajPgQFUcGgKFigz6Fiv9vtPtayfwPMZDLmfD5/CKB1rQCjOkmSTm0224bdbi/xMV8AU6nUQKFQCMNhgnf6qQzQCF58EXubYzlagPF4vK9ard7C4GbGXxqfFEWZdTqdr5RPpkcymVTAskuI7cCy2J81+A1Rb8pZyHptvFKphAmDnLrpUSqV9lD6FMk6LQsGjqkYGEKim2Kx+Iy4YVEsck8CYx/2TQlsXIDiSuTM9FQNmBdic36MxWKrWKEzXqclm0ymJVrSXS2jWoeE92odm+vZmA+N4MhOYw955V/LBOg3AoIlnRH56dn4GCzptuzxeK5xXg54g5aMZQuCIDa1jXRkU+vVc2AcuVyucOMcEmXBojsjTEU1W2zPqLImmJChBAywB7PZPA2Gl//n4NNboNw3q9U6D/GR5r/R6GpDnjl2y1DOVoUMoKOXNwOlsWOfJx60ox9gHljwiyGB1Wn4vYCthn8xPgEMNuuoL/qqaAAAAABJRU5ErkJggg=="></div>
@@ -223,22 +217,26 @@ export default {
         margin: 0 auto;
         padding: 18px 0;
     }
+    .gerneral-recommend-a-change::-webkit-scrollbar {
+        display: none;
+    }
     .gerneral-recommend-a-change{
         display: flex;
-        overflow: auto;
-        height: 150px;
+        overflow-x: auto;
+        height: 160px;
         width: 100%;
         padding: 10px 0;
+        flex-shrink: 0;
     }
-    .el-carousel{
+    .gerneral-recommend-a-changeimg{
+        width: 140px;
+        height: 140px;
+        margin: 5px 10px;
+        flex-shrink: 0;
+    }
+    .gerneral-recommend-a-changeimg img{
         width: 100%;
-        margin: 0 auto;
-    }
-    .el-carousel__item--card{
-        width: 35%;
-        margin: 0 30px;
-    }
-    .el-carousel img{
-        width: 100%;
+        flex-shrink: 0;
+        border-radius: 8px;
     }
 </style>

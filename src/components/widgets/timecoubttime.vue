@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     countdown: function() {
-      const end = Date.parse(new Date("2019-8-19"));
+      const end = Date.parse(new Date("2019-8-22"));
       const now = Date.parse(new Date());
       const msec = end - now;
       let day = parseInt(msec / 1000 / 60 / 60 / 24);
