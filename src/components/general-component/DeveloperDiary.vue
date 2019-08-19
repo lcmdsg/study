@@ -66,7 +66,7 @@
   </div>
 </template>
 
-<script>
+<script scope>
 import axios from "axios";
 
 export default {
