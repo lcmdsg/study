@@ -22,9 +22,10 @@
         </div>
       </div>
     </div>
-    <component :is="componentId"></component>
+    <component :is="componentId" @sindex="get"></component>
   </div>
 </template>
+
 <script>
 import user from "../user-component/User.vue";
 import userphone from "../user-component/UserPhone.vue";
@@ -33,8 +34,7 @@ import usermail from "../user-component/UserMail.vue";
 export default {
   data: function() {
     return {
-      index: 0,
-      componentId: "user"
+      componentId: "user",
     };
   },
   components: {
@@ -43,24 +43,30 @@ export default {
     usermail
   },
   methods: {
-    
+    get(i){
+      this.componentId=i;
+    }
   }
 };
 </script>
+
 <style>
 .user-contain {
   width: 100%;
   height: 100%;
 }
+
 .user-head {
   width: 100%;
   height: 50px;
 }
+
 .yanxuan-img {
   width: 80px;
   height: 25px;
   margin: auto;
 }
+
 .user-content {
   background: rgb(245, 245, 245);
   height: 681px;
@@ -74,6 +80,7 @@ export default {
   margin-top: 88px;
   margin-bottom: 140px;
 }
+
 .user-phone-login {
   border: 0 solid #dd1a21;
   background-color: #dd1a21;
@@ -85,6 +92,7 @@ export default {
   border-radius: 2px;
   line-height: 50px;
 }
+
 .user-email-login {
   border: 1px solid #dd1a21;
   color: #dd1a21;
@@ -96,6 +104,7 @@ export default {
   line-height: 50px;
   margin-top: 20px;
 }
+
 .user-footer {
   display: flex;
   flex-direction: row;
@@ -103,6 +112,7 @@ export default {
   padding: 0 50px;
   margin-top: 200px;
 }
+
 .user-footer-wrap {
   display: flex;
   flex-direction: row;
@@ -111,9 +121,11 @@ export default {
   font-size: 15px;
   padding-left: 30px;
 }
+
 .user-footer-border {
   border-right: 1px solid #979797;
 }
+
 .user-footer-wrap img {
   width: 22px;
   height: 22px;
