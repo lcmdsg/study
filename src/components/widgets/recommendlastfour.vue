@@ -1,20 +1,13 @@
 <template>
-
- 
-        <div class="each-recommendlast-item">
-          <div class="each-recommendlast-item-golden" v-if="(item.goldfont)">{{item.goldfont}}</div>
-          <div class="each-recommendlast-item-pic">
-            <img
-              :src="item.imgurl"
-              alt
-            />
-          </div>
-          <div class="each-recommendlast-item-title">{{item.title}}</div>
-          <div class="each-recommendlast-item-price">{{item.price}}</div>
-          <span class="each-recommendlast-item-special" v-if="(item.special)">{{item.special}}</span>
-        </div>
-
-
+  <div class="each-recommendlast-item">
+    <div class="each-recommendlast-item-golden" v-if="(item.goldfont)">{{item.goldfont}}</div>
+    <div class="each-recommendlast-item-pic">
+      <img :src="item.imgurl" alt />
+    </div>
+    <div class="each-recommendlast-item-title">{{item.title}}</div>
+    <div class="each-recommendlast-item-price">{{item.price}}</div>
+    <span class="each-recommendlast-item-special" v-if="(item.special)">{{item.special}}</span>
+  </div>
 </template>
 <script>
 export default {
@@ -47,7 +40,6 @@ export default {
   width: 27%;
   margin-left: 15px;
   height: 202px;
-
 }
 .each-recommendlast-item-pic {
   width: 100%;

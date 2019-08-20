@@ -1,6 +1,6 @@
 <template>
   <div class="summer-commodity-contents-item">
-    <img :src="detail.imgSrc" alt />
+    <img v-lazy="detail.imgSrc" alt />
     <div class="summer-commodity-desc">{{detail.imgDesc}}</div>
     <div class="summer-commodity-price">
       <span class="summer-commodity-price-now">{{detail.price}}</span>

@@ -4,7 +4,7 @@
       <div class="summer-buy-wrap-item">
         <div class="summer-buy-item-img">
           <img
-            :src="detail.imgSrc"
+            v-lazy="detail.imgSrc"
             alt
           />
         </div>

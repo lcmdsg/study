@@ -2,7 +2,7 @@
 <template>
 <!-- 小组件，居家生活，服饰鞋包等。。。-->
   <div class="family-card" :class="[index%2==0?'padding-right':'padding-left']">
-    <img :src="detail.imgSrc" alt />
+    <img v-lazy="detail.imgSrc" alt />
     <div class="family-card-imgdesc">{{detail.imgDesc}}</div>
     <div class="family-card-describe">{{detail.describe}}</div>
     <div class="family-card-price">
