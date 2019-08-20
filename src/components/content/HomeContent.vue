@@ -4,7 +4,7 @@
     <div class="homecontainer">
       <component :is="componentId"></component>
     </div>
-    <img src="../../assets/back-to-top.png" class="to-top" @click="backTop()" alt />
+    <!-- <img src="../../assets/back-to-top.png" class="to-top" @click="backTop()" alt /> -->
   </div>
 </template>
 <script>
