@@ -81,7 +81,7 @@ export default {
     //   console.log(res.data.list[0].swiperimg);
     //   that.detaillist = res.data.firstlist.newlist;
       that.swiperlist=res.data.list[0];
-      console.log(that.swiperlist.swiperimg)
+    //   console.log(that.swiperlist.swiperimg)
     });
   }
 };
