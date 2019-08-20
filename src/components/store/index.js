@@ -13,7 +13,9 @@ function indexOfItem(item, array){
 const store = new Vuex.Store({
     state: {
         homeTabIndex:0,
-        goodList:[]
+        goodList:[],
+        seen:true,
+        priceList:[],
     },
     mutations:{
         homeTabIndexChange(state,index){
@@ -21,6 +23,7 @@ const store = new Vuex.Store({
         },
         addGood(state, item){
             let index = indexOfItem(item, state.goodList);
+            state.seen=false;
             if(index>-1){
                 state.goodList[index].count++;
             }else{
