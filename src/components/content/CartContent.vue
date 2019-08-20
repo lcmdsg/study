@@ -77,7 +77,7 @@
             <span class="delete-good-redsqure"></span>
             <span class="delete-good-choose">已选{{item.count}}件</span>
           </div>
-          <div class="delete-good-del">删除所选</div>
+          <div class="delete-good-del" @click="del(index)">删除所选</div>
         </div>
       </div>
       
@@ -97,6 +97,9 @@ export default {
     }
   },
   computed:{
+         productnewlist(){
+     return this.$store.state.productnewlist;
+   },
         goodList(){
             return this.$store.state.goodList
         },
@@ -122,6 +125,9 @@ export default {
         },
         add(index){
             this.$store.commit("add", index);
+        },
+        del(index){
+            this.$store.commit("del", index);
         }
     }
 };

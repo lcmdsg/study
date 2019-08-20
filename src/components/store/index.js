@@ -15,12 +15,14 @@ const store = new Vuex.Store({
         homeTabIndex:0,
         goodList:[],
         seen:true,
-        priceList:[],
+        detaillist:[],
+        productnewlist:[]
     },
     mutations:{
         homeTabIndexChange(state,index){
             state.homeTabIndex=index
         },
+      
         addGood(state, item){
             let index = indexOfItem(item, state.goodList);
             state.seen=false;
@@ -44,6 +46,10 @@ const store = new Vuex.Store({
             if(state.goodList[index].count<2){
                 state.goodList[index].count=1
             }
+        },
+        aa(state,item){
+            state.productnewlist=item
+            // console.log(state.productnewlist)
         }
     }
 });

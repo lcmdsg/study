@@ -1,20 +1,33 @@
 <template>
-    <div class="recommendmini">
-        <div class="goldenfont" v-if="(item.goldfont)">{{item.goldfont}}</div>
-        <div class="recommendmini-img">
-            <img :src="item.imgurl" alt="">
-        </div>
-        <div class="recommendmini-title">
-            {{item.title}}<span class="recommendmini-price">{{item.price}}</span>
-        </div>
-        <span class="recommendmini-special" v-if="(item.special)">
-            {{item.special}}
-        </span>
+
+    <div class="recommendmini" @click="aa(index)">
+        
+            <div class="goldenfont" v-if="(item.goldfont)">{{item.goldfont}}</div>
+            <div class="recommendmini-img">
+                <img :src="item.imgurl" alt="">
+            </div>
+            <div class="recommendmini-title">
+                {{item.title}}<span class="recommendmini-price">{{item.price}}</span>
+            </div>
+            <span class="recommendmini-special" v-if="(item.special)">
+                {{item.special}}
+            </span>
+       
     </div>
+
 </template>
 <script>
+import store from "../store/index.js"
 export default {
-    props:["item"]
+    store:store,
+    props:["item","index","newproductList"],
+    methods:{
+     aa(index){
+         this.$store.commit("aa",this.newproductList[index]);
+         this.$router.push("recommenddetail");
+        //  console.log(this.newproductList[index]);
+     } 
+    }
 }
 </script>
 <style>

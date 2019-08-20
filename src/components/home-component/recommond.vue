@@ -1,7 +1,8 @@
 <template>
   <div class="middlecontent">
     <!-- 轮播图 -->
-    <div class="myswiper">
+    <a href="#backtotop"><img class="backtop" src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-f502426678.png"></a>
+    <div class="myswiper" id="backtotop">
       <swiper :options="swiperOption" ref="mySwiper">
         <!-- slides -->
         <swiper-slide v-for="(item) in swiperimglist" :key="item.imgurl">
@@ -100,7 +101,7 @@
       </div>
       <div class="timeshopping-body">
         <!-- 详情跳转 -->
-          <recommendmini v-for="(item,index) in newproductList" :key="index" :item="item"></recommendmini>
+          <recommendmini v-for="(item,index) in newproductList" :key="index" :item="item" :index="index" :newproductList="newproductList"></recommendmini>
       </div>
     </div>
     <!-- 分割栏 -->
@@ -240,6 +241,7 @@
   </div>
 </template>
 <script>
+import store from "../store/index.js"
 import recommendlastfour from "../widgets/recommendlastfour.vue";
 import crowdfunding from "../widgets/crowdfunding.vue";
 import projectselection from "../widgets/projectselection.vue";
@@ -256,6 +258,7 @@ import axios from "axios";
 import recommendswiper from "../widgets/recommendswiper.vue";
 
 export default {
+  store,
   components: {
     recommendlastfour,
     crowdfunding,
@@ -269,9 +272,20 @@ export default {
     recommendmini,
     hotsell
   },
-  methods: {},
+    computed:{
+    detaillist(){
+            return store.state.detaillist;
+        }
+  },
+  methods: {
+   scrollTop(){
+      this.scroll = document.documentElement.scrollTop ;
+      console.log(this.scroll)
+    }
+  },
   data() {
     return {
+      scroll:0,
       lastfourlist1: [],
       lastfourlist2: [],
       lastfourlist3: [],

@@ -1,46 +1,100 @@
 {
-    "newlist":[  
-        {
-        "imgurl":"https://yanxuan-item.nosdn.127.net/cff84f8844c856004e8de2595b76f570.png?imageView&quality=65&thumbnail=330x330",
-        "title":"春风魂系列千面电动飞机杯 ...",
-        "price":"379",
-        "goldfont":"",
-        "special":"满赠"
+    "newlist": [{
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/1cb7ac15f7ed24ec3c857b6adb5d9037.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/3b312590aa727fa87fafd0b5df638915.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/66902e08e55dd51afbf5cf1562dc0acc.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/63ddfcbd82813f049f8c88bd2687d180.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/c4590e5483847382c555b831b408cc1c.png?imageView&quality=75&thumbnail=750x0"
+            ],
+            "imgurl": "https://yanxuan-item.nosdn.127.net/cff84f8844c856004e8de2595b76f570.png?imageView&quality=65&thumbnail=330x330",
+            "title": "春风魂系列千面电动飞机杯 ...",
+            "nowprice": "379",
+            "oldprice": "399",
+            "goldfont": "",
+            "special": "满赠",
+            "count":1
         },
         {
-        "imgurl":"https://yanxuan-item.nosdn.127.net/58e7ef289596f73c597459fd69f26b5f.png?imageView&quality=65&thumbnail=330x330",
-        "title":"男式基础休闲裤",
-        "price":"99.9",
-        "goldfont":"4色可选",
-        "special":""
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/067dd340d6df883ead4e89921b6c3a4f.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/ccc15c04e66a29f43e20d3d394bb076f.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/6b7ded1164e87b677f58ab41047418e3.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0"
+            ],
+            "imgurl": "https://yanxuan-item.nosdn.127.net/58e7ef289596f73c597459fd69f26b5f.png?imageView&quality=65&thumbnail=330x330",
+            "title": "男式基础休闲裤",
+            "nowprice": "99.9",
+            "oldprice": "109.9",
+            "goldfont": "4色可选",
+            "special": "",
+            "count":1
         },
         {
-        "imgurl":"https://yanxuan.nosdn.127.net/8bf32abb64fabdfad8f9498a3199e91e.jpg?imageView&quality=65&thumbnail=330x330",
-        "title":"脚踏式双桶分类垃圾桶20L",
-        "price":"198",
-        "goldfont":"日本制造",
-        "special":"满赠"
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/4a40896fe879f999e370da8fd3619511.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/c8d3c4843c2ff831748f51d7b80e506d.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/787a74af576abd2b028088e74f679e6b.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/a28d08ddef4e98a3a179d4dc83a4583a.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/144bee811c325278b7c36efdc7adec54.jpg?imageView&quality=75&thumbnail=750x0"
+            ],
+            "imgurl": "https://yanxuan.nosdn.127.net/8bf32abb64fabdfad8f9498a3199e91e.jpg?imageView&quality=65&thumbnail=330x330",
+            "title": "脚踏式双桶分类垃圾桶20L",
+            "nowprice": "198",
+            "oldprice": "399",
+            "goldfont": "日本制造",
+            "special": "满赠",
+            "count":1
         },
         {
-        "imgurl":"https://yanxuan-item.nosdn.127.net/d910f6398771b881cdcda72b04f1bd56.png?imageView&quality=65&thumbnail=330x330",
-        "title":"男式舒软通勤商务正装鞋",
-        "price":"299",
-        "goldfont":"2色可选",
-        "special":""
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/10daf88fe75175beb1af90b3db1eed93.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/e42e3dc94962d1aa6c52c02875830825.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/588aaa74fa2461f4e61f990fc5203506.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/dcb8cf5a5e5476efb4716ce6d60a50ba.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/d910f6398771b881cdcda72b04f1bd56.png?imageView&quality=75&thumbnail=750x0"
+            ],
+            "imgurl": "https://yanxuan-item.nosdn.127.net/d910f6398771b881cdcda72b04f1bd56.png?imageView&quality=65&thumbnail=330x330",
+            "title": "男式舒软通勤商务正装鞋",
+            "nowprice": "299",
+            "oldprice": "109.9",
+
+            "goldfont": "2色可选",
+            "special": "",
+            "count":1
         },
         {
-        "imgurl":"https://yanxuan.nosdn.127.net/59bd6ae0307588f6eebf3848a4bd265f.png?imageView&quality=65&thumbnail=330x330",
-        "title":"家用除湿机",
-        "price":"2788",
-        "goldfont":"",
-        "special":""
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/35391dfa1b7ef26b405ea604ef4c50a3.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/9f272aa92d17141dd0b8618d78a9e65b.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/428b3d5295b4bda8a19d51476c0f0380.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/d9dcad65432654725c4aef0aa18c76b0.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/7b2564856174a581ad78509e62308850.png?imageView&quality=75&thumbnail=750x0"
+            ],
+            "imgurl": "https://yanxuan.nosdn.127.net/59bd6ae0307588f6eebf3848a4bd265f.png?imageView&quality=65&thumbnail=330x330",
+            "title": "家用除湿机",
+            "nowprice": "2788",
+            "oldprice": "2999",
+            "goldfont": "",
+            "special": "",
+            "count":1
         },
         {
-        "imgurl":"https://yanxuan.nosdn.127.net/ae8c3cda95b2a807d0b8518f7145eda4.png?imageView&quality=65&thumbnail=330x330",
-        "title":"黄油华夫饼 1千克",
-        "price":"49",
-        "goldfont":"",
-        "special":""
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/c8a9b0ffbabf88e5150be2f4f34bc5ec.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/3af120e227a6a7a7b4284dafd9877ea3.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/1eb694b0ccf2c6b76e9e3d8d97dda796.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/d558209a597b373321ad339ad8894335.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/2fa8e674142d221f42dfbf277ac2279c.png?imageView&quality=75&thumbnail=750x0"
+            ],
+            "imgurl": "https://yanxuan.nosdn.127.net/ae8c3cda95b2a807d0b8518f7145eda4.png?imageView&quality=65&thumbnail=330x330",
+            "title": "黄油华夫饼 1千克",
+            "nowprice": "49",
+            "oldprice": "109.9",
+            "goldfont": "",
+            "special": "",
+            "count":1
         }
     ]
 }
