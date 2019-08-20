@@ -37,12 +37,12 @@ export default {
     digital,
     feature
   },
-  mounted() {
-    window.addEventListener("scroll", this.scrollToTop);
-  },
-  destroyed(){
-    window.addEventListener("scroll", this.scrollToTop);
-  },
+  // mounted() {
+  //   window.addEventListener("scroll", this.scrollToTop);
+  // },
+  // destroyed(){
+  //   window.addEventListener("scroll", this.scrollToTop);
+  // },
   methods: {
     navclick(i) {
       // console.log(i);
