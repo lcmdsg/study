@@ -1,9 +1,10 @@
 <template>
   <div>
+    
     <!-- 分割栏 -->
     <div class="dividerline"></div>
     <!-- 顶部图片 -->
-    <div class="up-img">
+    <div class="up-img" >
       <img
         src="https://yanxuan.nosdn.127.net/4d3325dca3fd3955cb3f71049bcb06cf.jpg?imageView&quality=65&thumbnail=690y376"
         alt
@@ -113,6 +114,14 @@ export default {
 };
 </script>
 <style>
+.backtop{
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  bottom: 68px;
+  right: 10px;
+}
 .swiper-slide {
   touch-action: none;
   display: block;

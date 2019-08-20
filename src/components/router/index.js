@@ -15,7 +15,6 @@ const routes = [
   { path: "/general", component: General },
   {
     path: "/recommenddetail",
-    name: 'recommenddetail',
     component: RecommendDetail
   }
 

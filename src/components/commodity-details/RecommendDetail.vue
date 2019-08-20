@@ -21,20 +21,19 @@
       </div>
       <div class="detail-container">
         <swiper :options="swiperOption">
-          <div class="swiper-slide" v-for="(item,index) in swiperlist" :key="index">
+          <div class="swiper-slide" v-for="(item,index) in productnewlist.swiperimg" :key="index">
             <img
-              :src="swiperlist.swiperimg"
-              alt
+             
+              :src="item"
             />
           </div>
         </swiper>
         <div class="detail-content">
           <div class="derail-price">
-            <span class="derail-price-now">{{swiperlist.nowprice}}</span>
-            <span class="derail-price-origin">{{swiperlist.oldprice}}</span>
+            <span class="derail-price-now">{{productnewlist.nowprice}}</span>
           </div>
           <div class="detail-exclusive">
-            <span>{{swiperlist.special}}</span>
+            <span class="detail-exclusive-special">{{productnewlist.special}}</span>
           </div>
         </div>
       </div>
@@ -43,10 +42,10 @@
           <img src="../../assets/kefu.png" alt />
         </div>
         <div class>
-          <span>立即购买</span>
+          <span class="detail-contact-buy">立即购买</span>
         </div>
         <div>
-          <span>加入购物车</span>
+          <span class="detail-contact-cart"  @click="addGood(productnewlist)">加入购物车</span>
         </div>
       </div>
     </div>
@@ -54,11 +53,21 @@
 </template>
 <script>
 import store from "../store/index.js";
-import axios from "axios";
+// import axios from "axios";
 
 export default {
-    props: ["item"],
+    props: ["index"],
   store:store,
+ computed:{
+   productnewlist(){
+     return this.$store.state.productnewlist;
+   }
+ },
+ methods:{
+   addGood(productnewlist) {
+      this.$store.commit("addGood", productnewlist);
+    }
+ },
   data() {
     return {
       swiperOption: {
@@ -67,22 +76,17 @@ export default {
         },
         loop: true
       },
-      swiperlist:[]
+     
+    
     };
   },
-  methods: {
-    // addCart(item) {
-    //   this.$store.commit("addGood", item);
-    // }
-  },
+ 
   mounted() {
-    let that = this;
-    axios.get("../../../data/detail.json").then(function(res) {
+    // let that = this;
+    // axios.get("../../../data/detail.json").then(function(res) {
     //   console.log(res.data.list[0].swiperimg);
     //   that.detaillist = res.data.firstlist.newlist;
-      that.swiperlist=res.data.list[0];
     //   console.log(that.swiperlist.swiperimg)
-    });
   }
 };
 </script>
@@ -97,6 +101,46 @@ export default {
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
   z-index: 9999;
+}
+.derail-price-now{
+  height: 40px;
+  padding-left: 20px;
+  font-size: 24px;
+  color: #B4282D
+}
+.derail-price-now::before{
+  content: "\A5"
+}
+.detail-exclusive-special{
+  margin-left: 20px;
+  font-size: 15px;
+  border: 1px solid #B4282D;
+  color: #B4282D
+}
+.detail-contact-service{
+  width: 87px;
+  text-align: center;
+  border-right: 1px solid #f5f5f5
+}
+.detail-contact-service img{
+  padding-top: 10px;
+  width: 32px;
+}
+.detail-contact-buy{
+  display: inline-block;
+  width: 163px;
+  height: 100%;
+  text-align: center;
+}
+.detail-contact-cart{
+  display: inline-block;
+  width: 163px;
+  height: 55px;
+  padding-top: 15px;
+  text-align: center;
+  background: #B4282D;
+  color: white;
 }
 </style>

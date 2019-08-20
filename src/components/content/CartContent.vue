@@ -1,12 +1,13 @@
 <template>
   <div class="contentcontainer">
-    <div class="cart-head">
+    
+    <!-- 无商品 -->
+    <div class="cart-head" v-if="seen">
       <div class="cart-title">购物车</div>
       <router-link to="/user">
         <div class="cart-ticket">领券</div>
       </router-link>
     </div>
-    <!-- 无商品 -->
     <div v-if="seen">
       <div class="cart-desc">
         <div class="cart-safe">
@@ -33,20 +34,53 @@
       </div>
     </div>
     <!-- 有商品 -->
-    <div class="cart-item"  v-for="(item, index) in goodList" :key="index">
-      <div class="cart-redsqure"></div>
-      <div class="cart-item-body">
-        <img class="cart-item-img" :src="item.imgurl" alt="">
-        <div class="cart-item-right">
-          <div class="cart-item-title"><span class="cart-item-special">{{item.special}}</span>{{item.title}}</div>
-          <div class="cart-item-price"><span class="cart-item-newprice">{{item.oldprice}}</span><span class="cart-item-oldprice">{{item.oldprice}}</span></div>
-          <div class="cart-plus-minus">
-            <span class="cart-plus-minus-left" @click="minus(index)">-</span>
-            <span class="cart-plus-minus-mid">{{item.count}}</span>
-            <span class="cart-plus-minus-right" @click="add(index)">+</span>
+    <div class="cart-head" >
+      <div class="cart-title">购物车</div>
+      <div>
+          <router-link to="/user">
+            <span class="cart-ticket">领券</span>
+          </router-link>
+          <span class="cart-edit" @click="changecart">编辑</span>
+      </div>
+    </div>
+    <div  v-for="(item, index) in goodList" :key="index">
+      <div class="cart-item-container">
+        <div class="cart-item" >
+          <div class="cart-redsqure" @click="selectitem(item)"><img  v-show="aa" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></div>
+          <div class="cart-item-body">
+            <img class="cart-item-img" :src="item.imgurl" alt="">
+            <div class="cart-item-right">
+              <div class="cart-item-title"><span class="cart-item-special">{{item.special}}</span>{{item.title}}</div>
+              <div class="cart-item-price"><span class="cart-item-newprice">{{item.nowprice}}</span><span class="cart-item-oldprice">{{item.oldprice}}</span></div>
+              <div class="cart-plus-minus">
+                <span class="cart-plus-minus-left" @click="minus(index)">-</span>
+                <span class="cart-plus-minus-mid">{{item.count}}</span>
+                <span class="cart-plus-minus-right" @click="add(index)">+</span>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- 下单 -->
+        <div class="delete-good" v-show="look">
+          <div>
+            <span class="delete-good-redsqure"><img class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
+            <span class="delete-good-choose">已选{{item.count}}件</span>
+          </div>
+          <div class="allgoods-money">合计:{{item.nowprice*item.count}}</div>
+          <router-link to="/user">
+            <div class="delete-good-del">下单</div>
+          </router-link>
+        </div>
+        <!--编辑删除  -->
+        <div class="delete-good" v-show="!look">
+          <div>
+            <span class="delete-good-redsqure"></span>
+            <span class="delete-good-choose">已选{{item.count}}件</span>
+          </div>
+          <div class="delete-good-del" @click="del(index)">删除所选</div>
+        </div>
       </div>
+      
     </div>
   </div>
 </template>
@@ -56,28 +90,64 @@ export default {
   store:store,
   data(){
     return{
-      seen:false
+      look:true,
+      choose:true,
+      aa:true,
+      pricelist:[],
     }
   },
   computed:{
+         productnewlist(){
+     return this.$store.state.productnewlist;
+   },
         goodList(){
             return this.$store.state.goodList
+        },
+        seen(){
+          return this.$store.state.seen
         }
   },
    methods:{
+     selectitem(item){
+      //  console.log(item.nowprice*item.count);
+       this.aa=!this.aa
+       item.checked = !item.checked;
+   
+     },
+        changechoose(){
+          this.choose=!this.chooose
+        },
+        changecart(){
+          this.look=!this.look
+        },
         minus(index){
             this.$store.commit("minus", index);
         },
         add(index){
             this.$store.commit("add", index);
+        },
+        del(index){
+            this.$store.commit("del", index);
         }
     }
 };
 </script>
 <style>
-.contentcontainer{
+.cart-item-container{
   background: #EEEEEE;
-  height: 100%;
+  /* height: 630px; */
+}
+.cart-item{
+  height: 116px;
+   position: relative;
+   margin-bottom: 8px;
+  width: 100%;
+}
+.cart-item-title{
+  width: 240px;;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cart-head {
   width: 100%;
@@ -87,6 +157,7 @@ export default {
   justify-content: space-between;
   padding: 0 20px;
   line-height: 45px;
+  border-bottom: 1px solid #EEEEEE
 }
 .cart-title {
   font-size: 20px;
@@ -95,6 +166,7 @@ export default {
 .cart-ticket {
   font-size: 16px;
   color: #b4282d;
+  margin-right: 7px;
 }
 .cart-desc {
   padding: 10px 15px;
@@ -156,11 +228,16 @@ export default {
 }
 .cart-item{
   display: flex;
+  align-items: center;
   background: white;
   height: 124px;
 }
 .cart-redsqure{
-  width: 48px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  margin: 10px;
 }
 .cart-item-body{
   padding-top: 12px;
@@ -173,7 +250,7 @@ export default {
   background: #EEEEEE
 }
 .cart-item-right{
-  position: relative;
+ 
   margin-left: 10px;
 }
 .cart-item-title{
@@ -197,32 +274,78 @@ export default {
 }
 .cart-plus-minus{
   position: absolute;
-  right: 0px;
+  right: 24px;
   bottom: 10px;
 }
 .cart-plus-minus-left{
   display: inline-block;
+  margin: 0;
+  padding: 0;
   width: 33PX;
   height: 27PX;
-  border: 1px solid #999;
+  border: 1px solid #eeeeee;
   text-align: center;
 }
 .cart-plus-minus-right{
   display: inline-block;
   width: 33PX;
   height: 27PX;
-  border: 1px solid #999;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #eeeeee;
   text-align: center;
   
 }
 .cart-plus-minus-mid{
   display: inline-block;
   width: 24PX;
+  margin: 0;
+  padding: 0;
   height: 27PX;
-  border: 1px solid #999;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   text-align: center;
 }
 .cart-item-special{
   color: #f48f18
+}
+.delete-good{
+  background: white;
+  width: 100%;
+  height: 53px;
+  bottom: 55px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delete-good-del{
+  width: 126px;
+  background:#b4282d;
+  color: white;
+  text-align: center;
+  height: 100%;
+  line-height: 53px
+}
+.delete-good-redsqure{
+  display: inline-block;
+   width: 20px;
+  height: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.delete-good-choose{
+  font-size: 14px;
+  color: #999;
+}
+.allgoods-money{
+  color: #b4282d;
+  margin-left: 40px;
+  font-size: 15px;
+}
+.delete-good-redsqure-img{
+  width: 100%;
 }
 </style>
