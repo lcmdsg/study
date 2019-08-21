@@ -64,7 +64,7 @@
         <div class="delete-good" v-show="look">
           <div>
             <span class="delete-good-redsqure" @click="checkAll(true)"><img v-show="checkAllFlag" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
-            <span class="delete-good-choose">已选{{item.count}}件</span>
+            <span class="delete-good-choose">已选{{totalcount}}件</span>
           </div>
           <div class="allgoods-money">合计:{{totalMoney}}</div>
           <router-link to="/user">
@@ -95,8 +95,6 @@ export default {
       // aa:false,
       pricelist:[],
       checkAllFlag:false,
-      totalMoney:0,
-      totalcount:0
     }
   },
   computed:{
@@ -109,12 +107,12 @@ export default {
         seen(){
           return this.$store.state.seen
         },
-        // totalMoney(){
-        //   return this.$store.getters.totalMoney
-        // },
-        // totalcount(){
-        //   return this.$store.getters.totalcount
-        // }
+        totalMoney(){
+          return this.$store.getters.totalMoney
+        },
+        totalcount(){
+          return this.$store.getters.totalcount
+        }
   },
    methods:{
      selectitem(item,index){
@@ -140,21 +138,9 @@ export default {
           this.checkAllFlag = false;
       };
       console.log(this.checkAllFlag)
-      //这个位置调用计算总金额的函数
-      this.calcTotalPrice();//选中商品后调用计算总金额函数
      },
-     calcTotalPrice: function () {
-            this.totalMoney = 0;
-            this.totalcount=0//每次遍历商品之前对总金额进行清零
-            this.goodList.forEach((item,index) => {//遍历商品，如果选中就进行加个计算，然后累加
-                if (item.checked){
-                    this.totalMoney += item.nowprice*item.count;//累加的
-                    this.totalcount+=item.count
-                }
-            })
-        },
-        checkAll: function (flag) {
-            this.checkAllFlag = flag;
+        checkAll: function () {
+            this.checkAllFlag = !this.checkAllFlag;
             this.goodList.forEach((item, index) => {
                 if(typeof item.checked == 'undefined') {//检测属性是否存在
                     this.$set(item, "checked", this.checkAllFlag);//局部注册
@@ -162,7 +148,6 @@ export default {
                     item.checked = this.checkAllFlag;//状态取反
                 }
             });
-            this.calcTotalPrice();//全选时调用计算总金额函数
         },
         changechoose(){
           this.choose=!this.chooose

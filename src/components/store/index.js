@@ -17,25 +17,37 @@ const store = new Vuex.Store({
         seen:true,
         detaillist:[],
         productnewlist:[],
-        totalMoney:0,
-        totalcount:0
+        Money:0,
+        count:0
     },
     getters:{
-        totalMoney (state,getters) {
-           let totalMoney=0;
-            state.goodList.forEach((item) => {//遍历商品，如果选中就进行加个计算，然后累加
-                if (item.checked){
-                    state.totalMoney += item.nowprice*item.count;//累加的
-                }return totalMoney
-            })
+        totalcount (state) {
+           if(state.goodList.length>0){
+               let aa=state.goodList.map(function(c){
+                   return c.count
+               });
+               let b=aa.reduce(function(first,second){
+                   return first+second
+               })
+               return b
+           }else{
+               return 0;
+           }
+           
         },
-        totalcount (state,getters) {
-           let totalcount=0;
-            state.goodList.forEach((item) => {//遍历商品，如果选中就进行加个计算，然后累加
-                if (item.checked){
-                    state.totalcount += item.count;//累加的
-                }return totalcount
-            })
+        totalMoney (state) {
+            if(state.goodList.length>0){
+                let aa=state.goodList.map(function(c){
+                    return c.count*c.nowprice
+                });
+                let b=aa.reduce(function(first,second){
+                    return first+second
+                })
+                return b
+            }else{
+                return 0;
+            }
+            
         },
     },
     mutations:{
