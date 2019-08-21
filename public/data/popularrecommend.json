@@ -1,25 +1,49 @@
 {
     "newlist":[  
         {
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/067dd340d6df883ead4e89921b6c3a4f.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/ccc15c04e66a29f43e20d3d394bb076f.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/6b7ded1164e87b677f58ab41047418e3.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0"
+            ],
         "imgurl":"https://yanxuan.nosdn.127.net/d2abd30e0296cdee86f1bdd9242c0937.png?imageView&quality=65&thumbnail=330x330",
         "title":"无损风味 超即溶精品咖啡（...",
         "nowprice":"179",
         "goldfont":"",
-        "special":"特价"
+        "special":"特价",
+        "count":1
         },
         {
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/067dd340d6df883ead4e89921b6c3a4f.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/ccc15c04e66a29f43e20d3d394bb076f.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/6b7ded1164e87b677f58ab41047418e3.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0"
+            ],
         "imgurl":"https://yanxuan-item.nosdn.127.net/f33922af9863addb4845b1c93f04b012.png?imageView&quality=65&thumbnail=330x330",
         "title":"男式头层牛皮一脚蹬滑板鞋",
         "nowprice":"90.6",
         "goldfont":"2色可选",
-        "special":"抄底特惠"
+        "special":"抄底特惠",
+        "count":1
         },
         {
+            "swiperimg": [
+                "https://yanxuan-item.nosdn.127.net/067dd340d6df883ead4e89921b6c3a4f.png?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/ccc15c04e66a29f43e20d3d394bb076f.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/6b7ded1164e87b677f58ab41047418e3.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0",
+                "https://yanxuan-item.nosdn.127.net/4184ad62191db3114161ea79520883ad.jpg?imageView&quality=75&thumbnail=750x0"
+            ],
         "imgurl":"https://yanxuan-item.nosdn.127.net/1587b609600a8c80c7601f2c801d9a39.png?imageView&quality=65&thumbnail=330x330",
         "title":"轻便午睡折叠床",
         "nowprice":"299",
         "goldfont":"",
-        "special":"满减"
+        "special":"满减",
+        "count":1
         }
     ]
 }

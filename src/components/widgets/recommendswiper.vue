@@ -5,16 +5,16 @@
       <swiper :options="swiperOption" ref="mySwiper" id="recommendswiper">
         <!-- slides -->
         <swiper-slide>
-            <div><recommendmini v-for="(item,index) in recommendswiperList1" :item="item" :key="index"></recommendmini></div>
+            <div><recommendmini v-for="(item,index) in newproductList" :item="item" :key="index"  :index="index" :newproductList="newproductList"></recommendmini></div>
         </swiper-slide> 
         <swiper-slide> 
-            <div><recommendmini v-for="(item,index) in recommendswiperList2" :item="item" :key="index"></recommendmini></div>
+            <div><recommendmini v-for="(item,index) in newproductList" :item="item" :key="index"  :index="index" :newproductList="newproductList"></recommendmini></div>
         </swiper-slide> 
         <swiper-slide>
-            <div><recommendmini v-for="(item,index) in recommendswiperList3" :item="item" :key="index"></recommendmini></div>
+            <div><recommendmini v-for="(item,index) in newproductList" :item="item" :key="index"  :index="index" :newproductList="newproductList"></recommendmini></div>
         </swiper-slide> 
         <swiper-slide> 
-            <div><recommendmini v-for="(item,index) in recommendswiperList4" :item="item" :key="index"></recommendmini></div>
+            <div><recommendmini v-for="(item,index) in newproductList" :item="item" :key="index"  :index="index" :newproductList="newproductList"></recommendmini></div>
         </swiper-slide>
         <!-- Optional controls -->
         <div id="swiper-pagination1" class="swiper-pagination1" slot="pagination"></div>
@@ -24,20 +24,23 @@
 </template>
 
 <script>
+import store from "../store/index.js"
 import axios from 'axios'
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import recommendmini from "./recommendmini.vue";
 export default {
+  store:store,
+ 
  mounted() {
       
       let that=this
     axios.get("../../../data/recommendmini.json").then(function(res) {
       // console.log(res.data.list1);
-      that.recommendswiperList1=res.data.list1;
-      that.recommendswiperList2=res.data.list2;
-      that.recommendswiperList3=res.data.list3;
-      that.recommendswiperList4=res.data.list4;
+      that.newproductList=res.data.list1;
+      // that.recommendswiperList2=res.data.list2;
+      // that.recommendswiperList3=res.data.list3;
+      // that.recommendswiperList4=res.data.list4;
     });
   },
   components: {
@@ -47,10 +50,10 @@ export default {
   },
   data() {
     return {
-        recommendswiperList1:[],
-        recommendswiperList2:[],
-        recommendswiperList3:[],
-        recommendswiperList4:[],
+        newproductList:[],
+        // recommendswiperList2:[],
+        // recommendswiperList3:[],
+        // recommendswiperList4:[],
         swiperOption: {
         autoplay: false,
         loop: true,

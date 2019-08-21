@@ -128,7 +128,7 @@
         </div>
       </div>
       <div class="populai-bottom">
-        <recommendmini v-for="(item,index) in popularList" :key="index" :item="item"></recommendmini>
+        <recommendmini v-for="(item,index) in popularList" :key="index" :item="item" :index="index" :newproductList="newproductList"></recommendmini>
       </div>
     </div>
     <!-- 分割栏 -->
@@ -273,9 +273,7 @@ export default {
     hotsell
   },
     computed:{
-    detaillist(){
-            return store.state.detaillist;
-        }
+   
   },
   methods: {
    scrollTop(){
