@@ -53,7 +53,7 @@
               <div class="cart-item-title"><span class="cart-item-special">{{item.special}}</span>{{item.title}}</div>
               <div class="cart-item-price"><span class="cart-item-newprice">{{item.nowprice}}</span><span class="cart-item-oldprice">{{item.oldprice}}</span></div>
               <div class="cart-plus-minus">
-                <span class="cart-plus-minus-left" @click="minus(index)">-</span>
+                <span class="cart-plus-minus-left" :style="{borderColor:'#999'}" @click="minus(index)">-</span>
                 <span class="cart-plus-minus-mid">{{item.count}}</span>
                 <span class="cart-plus-minus-right" @click="add(index)">+</span>
               </div>
