@@ -16,7 +16,7 @@
           </router-link>
           <router-link to="/cart">
             <img src="../../assets/general-cart.png" alt />
-            <span class="cart-number">{{productnewlist.number}}</span>
+            <!-- <span class="cart-number">{{productnewlist.number}}</span> -->
           </router-link>
         </div>
       </div>

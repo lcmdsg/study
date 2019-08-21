@@ -1,13 +1,13 @@
 <template>
   <div class="contentcontainer">
     <!-- 无商品 -->
-    <div class="cart-head" v-if="seen">
+    <div class="cart-head" v-if="!goodList.length">
       <div class="cart-title">购物车</div>
       <router-link to="/user">
         <div class="cart-ticket">领券</div>
       </router-link>
     </div>
-    <div v-if="seen">
+    <div v-if="!goodList.length">
       <div class="cart-desc">
         <div class="cart-safe">
           <div class="cart-span">。</div>
@@ -44,10 +44,8 @@
     </div>
     <div v-for="(item, index) in goodList" :key="index">
       <div class="cart-item-container">
-        <div class="cart-item">
-          <div class="cart-redsqure" @click="selectitem(item)">
-            <img v-show="aa" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt />
-          </div>
+        <div class="cart-item" >
+          <div class="cart-redsqure" @click="selectitem(item)"><img  v-show="(item.checked)" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></div>
           <div class="cart-item-body">
             <img class="cart-item-img" :src="item.imgurl" alt />
             <div class="cart-item-right">
@@ -70,9 +68,7 @@
         <!-- 下单 -->
         <div class="delete-good" v-show="look">
           <div>
-            <span class="delete-good-redsqure">
-              <img class="delete-good-redsqure-img" src="images/cartyes.jpg" alt />
-            </span>
+            <span class="delete-good-redsqure" @click="checkAll(true)"><img v-show="checkAllFlag" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
             <span class="delete-good-choose">已选{{item.count}}件</span>
           </div>
           <div class="allgoods-money">合计:{{item.nowprice*item.count}}</div>
@@ -83,8 +79,8 @@
         <!--编辑删除  -->
         <div class="delete-good" v-show="!look">
           <div>
-            <span class="delete-good-redsqure"></span>
-            <span class="delete-good-choose">已选{{item.count}}件</span>
+            <span class="delete-good-redsqure"  @click="checkAll(true)"><img v-show="checkAllFlag" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
+            <span class="delete-good-choose" >已选{{totalcount}}件</span>
           </div>
           <div class="delete-good-del" @click="del(index)">删除所选</div>
         </div>
@@ -95,62 +91,98 @@
 <script>
 import store from "../store/index.js";
 export default {
-  store: store,
-  data() {
-    return {
-      look: true,
-      choose: true,
-      aa: true,
-      pricelist: []
-    };
-  },
-  computed: {
-    productnewlist() {
-      return this.$store.state.productnewlist;
-    },
-    goodList() {
-      return this.$store.state.goodList;
-    },
-    seen() {
-      return this.$store.state.seen;
+  store:store,
+  data(){
+    return{
+      look:true,
+      choose:true,
+      // aa:false,
+      pricelist:[],
+      checkAllFlag:false,
+      totalMoney:0,
+      totalcount:0
     }
   },
-  methods: {
-    selectitem(item) {
-      //  console.log(item.nowprice*item.count);
-
-      if (typeof item.checked == "undefined") {
-        //检测属性是否存在
-        //Vue.set(item, "checked", true);
-        this.$set(item, "checked", true); //局部注册
-      } else {
-        this.aa = !this.aa;
-        item.checked = !item.checked; //状态取反
-      }
+  computed:{
+        productnewlist(){
+        return this.$store.state.productnewlist;
+        },
+        goodList(){
+            return this.$store.state.goodList
+        },
+        seen(){
+          return this.$store.state.seen
+        },
+        // totalMoney(){
+        //   return this.$store.getters.totalMoney
+        // },
+        // totalcount(){
+        //   return this.$store.getters.totalcount
+        // }
+  },
+   methods:{
+     selectitem(item,index){
+       this.aa
+       =!this.aa
+      if(typeof item.checked == 'undefined') {//检测属性是否存在
+      //Vue.set(item, "checked", true);
+      this.$set(item, "checked", true);//局部注册
+      }else{
+        
+          item.checked = !item.checked;//状态取反
+      };
       //如果取消一个商品的选中，全选也取消
       var itemisChecked = [];
-      this.goodList.forEach(function(item, index) {
-        if (item.checked === true) {
-          itemisChecked.push(item);
-        }
-      });
-      if (itemisChecked.length === this.goodList.length) {
-        this.checkAllFlag = true;
-      } else {
-        this.checkAllFlag = false;
-      }
-      console.log(this.checkAllFlag);
+      this.goodList.forEach(function (item,index){
+          if (item.checked === true ) {
+              itemisChecked.push(item);
+          }
+      })
+      if (itemisChecked.length === this.goodList.length ) {
+          this.checkAllFlag = true;
+      }else{
+          this.checkAllFlag = false;
+      };
+      console.log(this.checkAllFlag)
       //这个位置调用计算总金额的函数
-      this.calcTotalPrice(); //选中商品后调用计算总金额函数
-    },
-    calcTotalPrice: function() {
-      this.totalMoney = 0; //每次遍历商品之前对总金额进行清零
-      this.goodList.forEach((item, index) => {
-        //遍历商品，如果选中就进行加个计算，然后累加
-        if (item.checked) {
-          this.totalMoney += item.nowprice * item.count; //累加的
+      this.calcTotalPrice();//选中商品后调用计算总金额函数
+     },
+     calcTotalPrice: function () {
+            this.totalMoney = 0;
+            this.totalcount=0//每次遍历商品之前对总金额进行清零
+            this.goodList.forEach((item,index) => {//遍历商品，如果选中就进行加个计算，然后累加
+                if (item.checked){
+                    this.totalMoney += item.nowprice*item.count;//累加的
+                    this.totalcount+=item.count
+                }
+            })
+        },
+        checkAll: function (flag) {
+            this.checkAllFlag = flag;
+            this.goodList.forEach((item, index) => {
+                if(typeof item.checked == 'undefined') {//检测属性是否存在
+                    this.$set(item, "checked", this.checkAllFlag);//局部注册
+                }else{
+                    item.checked = this.checkAllFlag;//状态取反
+                }
+            });
+            this.calcTotalPrice();//全选时调用计算总金额函数
+        },
+        changechoose(){
+          this.choose=!this.chooose
+        },
+        changecart(){
+          this.look=!this.look
+        },
+        minus(index){
+            this.$store.commit("minus", index);
+        },
+        add(index){ 
+            this.$store.commit("add", index);
+        },
+        del(index){
+            this.$store.commit("del", index);
         }
-      });
     },
     changechoose() {
       this.choose = !this.chooose;
@@ -167,12 +199,12 @@ export default {
     del(index) {
       this.$store.commit("del", index);
     }
-  }
 };
 </script>
 <style>
-.cart-item-container {
-  background: #eeeeee;
+.cart-item-container{
+  background: #EEEEEE;
+  margin-top: 50px;
   /* height: 630px; */
   overflow: hidden;
 }
@@ -189,6 +221,9 @@ export default {
   text-overflow: ellipsis;
 }
 .cart-head {
+  padding-bottom: 50px;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 50px;
   background: rgb(255, 255, 255);
@@ -236,9 +271,10 @@ export default {
 }
 
 .cart-content {
+  
   background: rgb(244, 244, 244);
   text-align: center;
-  height: 600px;
+  height: 650px;
   padding-top: 225px;
 }
 .cart-content-img {
