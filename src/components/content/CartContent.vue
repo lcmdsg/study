@@ -113,12 +113,12 @@ export default {
         seen(){
           return this.$store.state.seen
         },
-        // totalMoney(){
-        //   return this.$store.getters.totalMoney
-        // },
-        // totalcount(){
-        //   return this.$store.getters.totalcount
-        // }
+        totalMoney(){
+          return this.$store.getters.totalMoney
+        },
+        totalcount(){
+          return this.$store.getters.totalcount
+        }
   },
    methods:{
      selectitem(item,index){
