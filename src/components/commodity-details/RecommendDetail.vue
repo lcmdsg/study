@@ -16,6 +16,7 @@
           </router-link>
           <router-link to="/cart">
             <img src="../../assets/general-cart.png" alt />
+            <span class="car-number">1</span>
           </router-link>
         </div>
       </div>
