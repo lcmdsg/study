@@ -53,7 +53,7 @@
 </template>
 <script>
 import store from "../store/index.js";
-import axios from "axios";
+// import axios from "axios";
 
 export default {
     props: ["index"],
@@ -86,11 +86,7 @@ export default {
     // axios.get("../../../data/detail.json").then(function(res) {
     //   console.log(res.data.list[0].swiperimg);
     //   that.detaillist = res.data.firstlist.newlist;
-      // that.swiperlist=res.data.list;
-      // console.log(that.swiperlist.swiperimg);
-      // console.log(res.data.list);
-      console.log(this.productnewlist.swiperimg)
-    // });
+    //   console.log(that.swiperlist.swiperimg)
   }
 };
 </script>

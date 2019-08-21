@@ -61,7 +61,7 @@
           </div>
         </div>
         <!-- 下单 -->
-        <div class="delete-good"  v-show="look">
+        <div class="delete-good" v-show="look">
           <div>
             <span class="delete-good-redsqure"><img class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
             <span class="delete-good-choose">已选{{item.count}}件</span>

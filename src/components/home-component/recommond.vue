@@ -280,7 +280,7 @@ export default {
   methods: {
    scrollTop(){
       this.scroll = document.documentElement.scrollTop ;
-      console.log(this.scroll)
+      // console.log(this.scroll);
     }
   },
   data() {

@@ -7,7 +7,7 @@
                 <img :src="item.imgurl" alt="">
             </div>
             <div class="recommendmini-title">
-                {{item.title}}<span class="recommendmini-price">{{item.price}}</span>
+                {{item.title}}<span class="recommendmini-price">{{item.nowprice}}</span>
             </div>
             <span class="recommendmini-special" v-if="(item.special)">
                 {{item.special}}
