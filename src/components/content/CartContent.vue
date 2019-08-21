@@ -134,7 +134,7 @@ export default {
       };
       console.log(this.checkAllFlag)
       //这个位置调用计算总金额的函数
-   this.calcTotalPrice();//选中商品后调用计算总金额函数
+      this.calcTotalPrice();//选中商品后调用计算总金额函数
      },
      calcTotalPrice: function () {
             this.totalMoney = 0;//每次遍历商品之前对总金额进行清零
