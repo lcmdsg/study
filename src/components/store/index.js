@@ -16,7 +16,27 @@ const store = new Vuex.Store({
         goodList:[],
         seen:true,
         detaillist:[],
-        productnewlist:[]
+        productnewlist:[],
+        totalMoney:0,
+        totalcount:0
+    },
+    getters:{
+        totalMoney (state,getters) {
+           let totalMoney=0;
+            state.goodList.forEach((item) => {//遍历商品，如果选中就进行加个计算，然后累加
+                if (item.checked){
+                    state.totalMoney += item.nowprice*item.count;//累加的
+                }return totalMoney
+            })
+        },
+        totalcount (state,getters) {
+           let totalcount=0;
+            state.goodList.forEach((item) => {//遍历商品，如果选中就进行加个计算，然后累加
+                if (item.checked){
+                    state.totalcount += item.count;//累加的
+                }return totalcount
+            })
+        },
     },
     mutations:{
         homeTabIndexChange(state,index){
@@ -37,8 +57,12 @@ const store = new Vuex.Store({
             state.goodList[index].count++;
         },
 
-        del(state, index){
-            state.goodList.splice(index, 1);
+        del(state,item, index){
+            // if(item.checked){
+                state.goodList.splice(index, 1);
+                console.log(item.checked)
+            // }
+            
         },
 
         minus(state, index){
