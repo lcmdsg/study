@@ -34,7 +34,7 @@
             <span class="derail-price-now">{{productnewlist.nowprice}}</span>
           </div>
           <div class="detail-exclusive">
-            <span class="detail-exclusive-special">{{productnewlist.special}}</span>
+            <span class="detail-exclusive-special" v-if="(productnewlist.special)">{{productnewlist.special}}</span>
           </div>
         </div>
       </div>
