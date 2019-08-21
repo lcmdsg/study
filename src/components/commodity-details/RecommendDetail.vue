@@ -16,17 +16,14 @@
           </router-link>
           <router-link to="/cart">
             <img src="../../assets/general-cart.png" alt />
-            <span class="car-number">1</span>
+            <span class="cart-number">{{productnewlist.number}}</span>
           </router-link>
         </div>
       </div>
       <div class="detail-container">
         <swiper :options="swiperOption">
           <div class="swiper-slide" v-for="(item,index) in productnewlist.swiperimg" :key="index">
-            <img
-             
-              :src="item"
-            />
+            <img :src="item" />
           </div>
         </swiper>
         <div class="detail-content">
@@ -34,7 +31,10 @@
             <span class="derail-price-now">{{productnewlist.nowprice}}</span>
           </div>
           <div class="detail-exclusive">
-            <span class="detail-exclusive-special" v-if="(productnewlist.special)">{{productnewlist.special}}</span>
+            <span
+              class="detail-exclusive-special"
+              v-if="(productnewlist.special)"
+            >{{productnewlist.special}}</span>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
           <span class="detail-contact-buy">立即购买</span>
         </div>
         <div>
-          <span class="detail-contact-cart"  @click="addGood(productnewlist)">加入购物车</span>
+          <span class="detail-contact-cart" @click="addGood(productnewlist)">加入购物车</span>
         </div>
       </div>
     </div>
@@ -57,18 +57,18 @@ import store from "../store/index.js";
 // import axios from "axios";
 
 export default {
-    props: ["index"],
-  store:store,
- computed:{
-   productnewlist(){
-     return this.$store.state.productnewlist;
-   }
- },
- methods:{
-   addGood(productnewlist) {
+  props: ["index"],
+  store: store,
+  computed: {
+    productnewlist() {
+      return this.$store.state.productnewlist;
+    }
+  },
+  methods: {
+    addGood(productnewlist) {
       this.$store.commit("addGood", productnewlist);
     }
- },
+  },
   data() {
     return {
       swiperOption: {
@@ -76,12 +76,10 @@ export default {
           el: ".swiper-pagination"
         },
         loop: true
-      },
-     
-    
+      }
     };
   },
- 
+
   mounted() {
     // let that = this;
     // axios.get("../../../data/detail.json").then(function(res) {
@@ -93,6 +91,19 @@ export default {
 </script>
 
 <style>
+.cart-number {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  background-color: #b4282d;
+  text-align: center;
+  line-height: 18px;
+  font-size: 12px;
+  color: #fff;
+}
 .detail-footer {
   width: 100%;
   position: fixed;
@@ -105,43 +116,43 @@ export default {
   align-items: center;
   z-index: 9999;
 }
-.derail-price-now{
+.derail-price-now {
   height: 40px;
   padding-left: 20px;
   font-size: 24px;
-  color: #B4282D
+  color: #b4282d;
 }
-.derail-price-now::before{
-  content: "\A5"
+.derail-price-now::before {
+  content: "\A5";
 }
-.detail-exclusive-special{
+.detail-exclusive-special {
   margin-left: 20px;
   font-size: 15px;
-  border: 1px solid #B4282D;
-  color: #B4282D
+  border: 1px solid #b4282d;
+  color: #b4282d;
 }
-.detail-contact-service{
+.detail-contact-service {
   width: 87px;
   text-align: center;
-  border-right: 1px solid #f5f5f5
+  border-right: 1px solid #f5f5f5;
 }
-.detail-contact-service img{
+.detail-contact-service img {
   padding-top: 10px;
   width: 32px;
 }
-.detail-contact-buy{
+.detail-contact-buy {
   display: inline-block;
   width: 163px;
   height: 100%;
   text-align: center;
 }
-.detail-contact-cart{
+.detail-contact-cart {
   display: inline-block;
   width: 163px;
   height: 55px;
   padding-top: 15px;
   text-align: center;
-  background: #B4282D;
+  background: #b4282d;
   color: white;
 }
 </style>

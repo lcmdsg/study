@@ -28,6 +28,7 @@ const store = new Vuex.Store({
             state.seen=false;
             if(index>-1){
                 state.goodList[index].count++;
+                state.goodList[index].number++;
             }else{
                 state.goodList.push(item);
             }
@@ -39,6 +40,8 @@ const store = new Vuex.Store({
 
         del(state, index){
             state.goodList.splice(index, 1);
+            // state.goodList[index].number==0;
+            // state.seen=true;
         },
 
         minus(state, index){

@@ -1,5 +1,6 @@
 {
-    "newlist": [{
+    "newlist": [
+        {
             "swiperimg": [
                 "https://yanxuan-item.nosdn.127.net/1cb7ac15f7ed24ec3c857b6adb5d9037.jpg?imageView&quality=75&thumbnail=750x0",
                 "https://yanxuan-item.nosdn.127.net/3b312590aa727fa87fafd0b5df638915.jpg?imageView&quality=75&thumbnail=750x0",
@@ -13,7 +14,8 @@
             "oldprice": "399",
             "goldfont": "",
             "special": "满赠",
-            "count":1
+            "count": 1,
+            "number": 0
         },
         {
             "swiperimg": [
@@ -29,7 +31,8 @@
             "oldprice": "109.9",
             "goldfont": "4色可选",
             "special": "",
-            "count":1
+            "count": 1,
+            "number": 0
         },
         {
             "swiperimg": [
@@ -45,7 +48,8 @@
             "oldprice": "399",
             "goldfont": "日本制造",
             "special": "满赠",
-            "count":1
+            "count": 1,
+            "number": 0
         },
         {
             "swiperimg": [
@@ -59,10 +63,10 @@
             "title": "男式舒软通勤商务正装鞋",
             "nowprice": "299",
             "oldprice": "109.9",
-
             "goldfont": "2色可选",
             "special": "",
-            "count":1
+            "count": 1,
+            "number": 0
         },
         {
             "swiperimg": [
@@ -78,7 +82,8 @@
             "oldprice": "2999",
             "goldfont": "",
             "special": "",
-            "count":1
+            "count": 1,
+            "number": 0
         },
         {
             "swiperimg": [
@@ -94,7 +99,8 @@
             "oldprice": "109.9",
             "goldfont": "",
             "special": "",
-            "count":1
+            "count": 1,
+            "number": 0
         }
     ]
 }
