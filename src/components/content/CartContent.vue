@@ -118,8 +118,39 @@ export default {
   methods: {
     selectitem(item) {
       //  console.log(item.nowprice*item.count);
-      this.aa = !this.aa;
-      item.checked = !item.checked;
+
+      if (typeof item.checked == "undefined") {
+        //检测属性是否存在
+        //Vue.set(item, "checked", true);
+        this.$set(item, "checked", true); //局部注册
+      } else {
+        this.aa = !this.aa;
+        item.checked = !item.checked; //状态取反
+      }
+      //如果取消一个商品的选中，全选也取消
+      var itemisChecked = [];
+      this.goodList.forEach(function(item, index) {
+        if (item.checked === true) {
+          itemisChecked.push(item);
+        }
+      });
+      if (itemisChecked.length === this.goodList.length) {
+        this.checkAllFlag = true;
+      } else {
+        this.checkAllFlag = false;
+      }
+      console.log(this.checkAllFlag);
+      //这个位置调用计算总金额的函数
+      this.calcTotalPrice(); //选中商品后调用计算总金额函数
+    },
+    calcTotalPrice: function() {
+      this.totalMoney = 0; //每次遍历商品之前对总金额进行清零
+      this.goodList.forEach((item, index) => {
+        //遍历商品，如果选中就进行加个计算，然后累加
+        if (item.checked) {
+          this.totalMoney += item.nowprice * item.count; //累加的
+        }
+      });
     },
     changechoose() {
       this.choose = !this.chooose;
@@ -140,7 +171,6 @@ export default {
 };
 </script>
 <style>
-
 .cart-item-container {
   background: #eeeeee;
   /* height: 630px; */

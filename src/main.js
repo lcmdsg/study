@@ -15,9 +15,9 @@ Vue.use(VueLazyLoad, {
   error: './static/error.png',
   loading: './static/loading.png'
 });
-import Mint from 'mint-ui';
-import 'mint-ui/lib/style.css'
-Vue.use(Mint);
+// import Mint from 'mint-ui';
+// import 'mint-ui/lib/style.css'
+// Vue.use(Mint);
 Vue.use(VueAwesomeSwiper);
 Vue.use(VueRouter);
 Vue.use(ElementUI);

@@ -192,9 +192,9 @@ export default {
         padding: 20px 0 14px 0;
         font-weight: 700;
     }
-    .each-goodthing-artical-desc{
-        /* padding-bottom: 25px; */
-    }
+    /* .each-goodthing-artical-desc{
+        padding-bottom: 25px;
+    } */
     .each-goodthing-bottom{
         display: flex;
         height: 60px;

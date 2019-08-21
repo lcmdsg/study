@@ -3,7 +3,9 @@
     <div class="top">
       <div class="search-bar">
         <div class="searchimg">
-          <img src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png" />
+          <img
+            src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png"
+          />
         </div>
         <router-link to="/search">
           <div class="search-click">
@@ -21,22 +23,37 @@
       <!-- <content-tab></content-tab> -->
     </div>
     <div class="nav-wrap" ref="navwrap">
-      <div  class="nav-item"  v-for="(item,i) in tabList" :key="i" @click="navclick(i,$event)" :class="{'active1':i==index}">{{item}}</div>
+      <div
+        class="nav-item"
+        v-for="(item,i) in tabList"
+        :key="i"
+        @click="navclick(i,$event)"
+        :class="{'active1':i==index}"
+      >{{item}}</div>
       <div class="nav-item-empty"></div>
     </div>
-     <div class="xiala" @click="xiala">
-        <img src="../../assets/jian-tou.png" :class="[rotate?'fa fa-arrow-down go':'fa fa-arrow-down aa']"/>
-      </div>
+    <div class="xiala" @click="xiala">
+      <img
+        src="../../assets/jian-tou.png"
+        :class="[rotate?'fa fa-arrow-down go':'fa fa-arrow-down aa']"
+      />
+    </div>
     <div class="shade" v-if="shadeshow">
-        <div class="misscontent" v-if="seen">
+      <div class="misscontent" v-if="seen">
         <!-- <div class="xiala" @click="xiala">
         <img src="../../assets/jian-tou.png" :class="[rotate?'fa fa-arrow-down go':'fa fa-arrow-down aa']"/>
-        </div> -->
+        </div>-->
         <div class="misscontent-title">全部</div>
         <div class="misscontent-content">
-          <div class="misscontent-each" v-for="(item,i) in tabList" :key="i" @click="navclick(i,$event)" :class="{'active2':i==index}">{{item}}</div>
+          <div
+            class="misscontent-each"
+            v-for="(item,i) in tabList"
+            :key="i"
+            @click="navclick(i,$event)"
+            :class="{'active2':i==index}"
+          >{{item}}</div>
         </div>
-        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,7 +61,7 @@
 export default {
   data() {
     return {
-      activeNames: ['1'],
+      activeNames: ["1"],
       tabList: [
         "推荐",
         "居家生活",
@@ -59,7 +76,7 @@ export default {
       index: 0,
       seen: false,
       rotate: false,
-      shadeshow:false
+      shadeshow: false
     };
   },
   methods: {
@@ -71,9 +88,10 @@ export default {
     navclick(i, event) {
       this.index = i;
       this.$emit("navclick", i);
-      let distance =
-        event.clientX - window.screen.width / 2 + event.target.clientWidth / 2;
-      this.$refs.navwrap.scrollLeft += distance;
+      if (this.index > 0) {
+        let a=event.clientX-event.target.offsetLeft;
+        this.$refs.navwrap.scrollLeft = (event.clientX-a);
+      }
     }
   }
 };
@@ -133,15 +151,15 @@ a:visited {
   display: flex;
   align-items: center;
 }
-.register{
-      width: 38px;
-    height: 24px;
-    line-height:24px;
-    text-align: center;
-    color: #b4282d;
-    border: 1px solid #b4282d;
-    border-radius: 5px;
-    font-size:13px;
+.register {
+  width: 38px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #b4282d;
+  border: 1px solid #b4282d;
+  border-radius: 5px;
+  font-size: 13px;
 }
 .search-my {
   width: 40px;
@@ -149,12 +167,10 @@ a:visited {
 .active1 {
   border-bottom: 2px solid #b4282d;
 }
-.misscontent-content>.active2{
-     
-    border-color: #b4282d;
-    color: #b4282d;
+.misscontent-content > .active2 {
+  border-color: #b4282d;
+  color: #b4282d;
   border: 1px solid #b4282d;
-
 }
 .nav-wrap::-webkit-scrollbar {
   display: none;
@@ -180,8 +196,8 @@ a:visited {
   font-size: 14px;
   flex-shrink: 0;
 }
-.nav-item-empty{
-   line-height: 28px;
+.nav-item-empty {
+  line-height: 28px;
   height: 30px;
   margin: 0 13px;
   font-size: 14px;
@@ -206,17 +222,18 @@ a:visited {
   z-index: 9999;
   position: fixed;
   overflow: hidden;
-  background-color: #fff;;
+  background-color: #fff;
 }
-.el-collapse,.el-collapse-item {
+.el-collapse,
+.el-collapse-item {
   z-index: 1;
 }
-.misscontent-title{
+.misscontent-title {
   padding-left: 20px;
   height: 30px;
   line-height: 30px;
 }
-.misscontent-content{
+.misscontent-content {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -224,8 +241,8 @@ a:visited {
   flex-shrink: 0;
   width: 100%;
 }
-.misscontent-each{
-  width:87px;
+.misscontent-each {
+  width: 87px;
   height: 32px;
   margin-bottom: 14px;
   text-align: center;
