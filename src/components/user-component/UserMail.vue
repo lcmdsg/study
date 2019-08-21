@@ -6,16 +6,18 @@
       </div>
       <div class="user-content-login">
         <div class="user-content-number">
-          <input class="user-content-input1" type="email" placeholder="邮箱账号" />
+          <input class="user-content-input1" type="email" placeholder="邮箱账号" v-model="message"/>
         </div>
         <div class="user-content-number">
-          <input class="user-content-input2" type="password" placeholder="密码" />
+          <input class="user-content-input2" type="password" placeholder="密码" v-model="message1" />
         </div>
         <div class="user-content-wrap">
           <span class="user-content-item1">注册账号</span>
           <span class="user-content-item2">忘记密码</span>
         </div>
-        <div class="user-content-go">登录</div>
+        
+          <div class="user-content-go" @click="login">登录</div>
+        
       </div>
       <div class="user-content-other" @click="backtoindex">其他登录方式></div>
     </div>
@@ -26,11 +28,22 @@
 export default {
   name: "usermail",
   data() {
-    return {};
+    return {
+      message:"",
+      message1:"",
+    };
   },
   methods: {
     backtoindex() {
       this.$emit("sindex", "user");
+    },
+    login(){
+      if(this.message&&this.message1){
+        this.$router.push("/")
+      }else{
+        alert("请输入")
+      }
+      
     }
   }
 };
