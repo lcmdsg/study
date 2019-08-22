@@ -12,8 +12,8 @@ import 'swiper/dist/css/swiper.css';
 // lanjiazai
 import VueLazyLoad from 'vue-lazyload';
 Vue.use(VueLazyLoad, {
-  error: './static/error.png',
-  loading: './static/loading.png'
+  // error: './static/error.png',
+  // loading: './static/loading.png'
 });
 // import Mint from 'mint-ui';
 // import 'mint-ui/lib/style.css'
