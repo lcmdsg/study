@@ -144,7 +144,7 @@ export default {
     }
   },
   methods: {
-    selectitem(item, index) {
+    selectitem(item) {
       this.aa = !this.aa;
       if (typeof item.checked == "undefined") {
         //检测属性是否存在
@@ -155,7 +155,7 @@ export default {
       }
       //如果取消一个商品的选中，全选也取消
       var itemisChecked = [];
-      this.goodList.forEach(function(item, index) {
+      this.goodList.forEach(function(item) {
         if (item.checked === true) {
           itemisChecked.push(item);
         }
@@ -169,7 +169,7 @@ export default {
     },
     checkAll: function() {
       this.checkAllFlag = !this.checkAllFlag;
-      this.goodList.forEach((item, index) => {
+      this.goodList.forEach(item => {
         if (typeof item.checked == "undefined") {
           //检测属性是否存在
           this.$set(item, "checked", this.checkAllFlag); //局部注册
@@ -193,6 +193,21 @@ export default {
     del(index) {
       this.$store.commit("del", index);
     }
+  },
+  changechoose() {
+    this.choose = !this.chooose;
+  },
+  changecart() {
+    this.look = !this.look;
+  },
+  minus(index) {
+    this.$store.commit("minus", index);
+  },
+  add(index) {
+    this.$store.commit("add", index);
+  },
+  del(index) {
+    this.$store.commit("del", index);
   }
 };
 </script>
