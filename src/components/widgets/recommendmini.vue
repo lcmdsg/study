@@ -42,7 +42,6 @@ export default {
     }
     .goldenfont{
         width: 18px;
-        height: 66px;
         border: 1px solid #b4a078;
         position: absolute;
         left: 6px;
