@@ -1,11 +1,14 @@
 <template>
   <div class="content-wrap">
     <div class="content-block">
-      <img
-        class="content-title-img"
-        src="https://yanxuan.nosdn.127.net/99818d29b6d1eb03477ba2874a119d6d.jpg?imageView&quality=75&thumbnail=0x196"
-        alt
-      />
+      <div class="my-swiper-wrap">
+        <swiper :options="swiperOption" ref="mySwiper">
+          <swiper-slide v-for="(item,index) in swiperList" :key="index">
+            <img class="my-swiper-img" :src="item" alt />
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
       <div v-for="(item,index) in completeList" :key="index">
         <div class="content-list-head">{{item.head}}</div>
         <div class="content-list-wrap">
@@ -21,20 +24,42 @@
 
 <script>
 import axios from "axios";
+import "swiper/dist/css/swiper.css";
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 
 export default {
   name: "child",
   data() {
     return {
+      swiperOption: {
+        pagination: {
+          el: "swiper-pagination",
+          bulletClass: "my-bullet",
+          bulletActiveClass: "my-bullet-active"
+        }
+      },
+      swiperList: [],
       completeList: [],
-      list:[]
+      list: []
     };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper;
+    }
   },
   created() {
     let that = this;
+    axios.get("../../../detail/child-swiper.json").then(function(res) {
+      that.swiperList = res.data.result;
+    });
     axios.get("../../../detail/child.json").then(function(res) {
       that.completeList = res.data.completeList;
     });
+  },
+  components: {
+    swiper,
+    swiperSlide
   }
 };
 </script>
@@ -42,7 +67,7 @@ export default {
 <style>
 .content-wrap {
   position: static;
-  margin-left:40px;
+  margin-left: 40px;
   width: 333px;
   height: 100%;
 }
