@@ -89,8 +89,8 @@ export default {
       this.index = i;
       this.$emit("navclick", i);
       if (this.index > 0) {
-        let a=event.clientX-event.target.offsetLeft;
-        this.$refs.navwrap.scrollLeft = (event.clientX-a);
+        // let a=event.clientX-event.target.offsetLeft;
+        this.$refs.navwrap.scrollLeft = event.target.offsetLeft;
       }
     }
   }
