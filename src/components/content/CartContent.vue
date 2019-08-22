@@ -79,7 +79,14 @@
         <!-- 下单 -->
         <div class="delete-good" v-show="look">
           <div>
-            <span class="delete-good-redsqure" @click="checkAll(true)"><img v-show="checkAllFlag" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
+            <span class="delete-good-redsqure" @click="checkAll(true)">
+              <img
+                v-show="checkAllFlag"
+                class="delete-good-redsqure-img"
+                src="images/cartyes.jpg"
+                alt
+              />
+            </span>
             <span class="delete-good-choose">已选{{count}}件</span>
           </div>
           <div class="allgoods-money">合计:{{money}}</div>
@@ -90,13 +97,21 @@
         <!--编辑删除  -->
         <div class="delete-good" v-show="!look">
           <div>
-            <span class="delete-good-redsqure"  @click="checkAll(true)"><img v-show="checkAllFlag" class="delete-good-redsqure-img" src="images/cartyes.jpg" alt=""></span>
-            <span class="delete-good-choose" >已选{{count}}件</span>
+            <span class="delete-good-redsqure" @click="checkAll(true)">
+              <img
+                v-show="checkAllFlag"
+                class="delete-good-redsqure-img"
+                src="images/cartyes.jpg"
+                alt
+              />
+            </span>
+            <span class="delete-good-choose">已选{{count}}件</span>
           </div>
           <div class="delete-good-del" @click="del(index)">删除所选</div>
         </div>
       </div>
     </div>
+    <div class="kongbai"></div>
   </div>
 </template>
 <script>
@@ -108,11 +123,11 @@ export default {
       look: true,
       choose: true,
       // aa:false,
-      pricelist:[],
-      checkAllFlag:false,
-      money:0,
-      count:0
-    }
+      pricelist: [],
+      checkAllFlag: false,
+      money: 0,
+      count: 0
+    };
   },
   computed: {
     productnewlist() {
@@ -131,75 +146,85 @@ export default {
       return this.$store.getters.totalcount;
     }
   },
- 
-   methods:{
-     computemoney(){
-       this.money = 0;
-       this.count=0;//每次遍历商品之前对总金额进行清零
-            this.goodList.forEach((item) => {//遍历商品，如果选中就进行加个计算，然后累加
-                if (item.checked){
-                    this.money += item.nowprice*item.count;
-                    this.count+=item.count//累加的
-                }
-            });
-     },
-     selectitem(item){
+
+  methods: {
+    computemoney() {
+      this.money = 0;
+      this.count = 0; //每次遍历商品之前对总金额进行清零
+      this.goodList.forEach(item => {
+        //遍历商品，如果选中就进行加个计算，然后累加
+        if (item.checked) {
+          this.money += item.nowprice * item.count;
+          this.count += item.count; //累加的
+        }
+      });
+    },
+    selectitem(item) {
       //  this.aa
       //  =!this.aa
-      if(typeof item.checked == 'undefined') {//检测属性是否存在
-      //Vue.set(item, "checked", true);
-      this.$set(item, "checked", true);//局部注册
-      }else{
-        
-          item.checked = !item.checked;//状态取反
+      if (typeof item.checked == "undefined") {
+        //检测属性是否存在
+        //Vue.set(item, "checked", true);
+        this.$set(item, "checked", true); //局部注册
+      } else {
+        item.checked = !item.checked; //状态取反
       }
       //如果取消一个商品的选中，全选也取消
       var itemisChecked = [];
-      this.goodList.forEach(function (item){
-          if (item.checked === true ) {
-              itemisChecked.push(item);
-          }
-      })
-      if (itemisChecked.length === this.goodList.length ) {
-          this.checkAllFlag = true;
-      }else{
-          this.checkAllFlag = false;
+      this.goodList.forEach(function(item) {
+        if (item.checked === true) {
+          itemisChecked.push(item);
+        }
+      });
+      if (itemisChecked.length === this.goodList.length) {
+        this.checkAllFlag = true;
+      } else {
+        this.checkAllFlag = false;
       }
-      this.computemoney()
+      this.computemoney();
       // console.log(this.totalMoney)
       // console.log(this.checkAllFlag)
-     },
-        checkAll: function () {
-            this.checkAllFlag = !this.checkAllFlag;
-            this.goodList.forEach((item) => {
-                if(typeof item.checked == 'undefined') {//检测属性是否存在
-                    this.$set(item, "checked", this.checkAllFlag);//局部注册
-                }else{
-                    item.checked = this.checkAllFlag;//状态取反
-                }
-            });this.computemoney()
-        },
-        changechoose(){
-          this.choose=!this.chooose
-        },
-        changecart(){
-          this.look=!this.look
-        },
-        minus(index){
-            this.$store.commit("minus", index);
-            this.computemoney()
-        },
-        add(index){ 
-            this.$store.commit("add", index);
-            this.computemoney()
-        },
-        del(index){
-            this.$store.commit("del", index);
+    },
+    checkAll: function() {
+      this.checkAllFlag = !this.checkAllFlag;
+      this.goodList.forEach(item => {
+        if (typeof item.checked == "undefined") {
+          //检测属性是否存在
+          this.$set(item, "checked", this.checkAllFlag); //局部注册
+        } else {
+          item.checked = this.checkAllFlag; //状态取反
         }
+      });
+      this.computemoney();
+    },
+    changechoose() {
+      this.choose = !this.chooose;
+    },
+    changecart() {
+      this.look = !this.look;
+    },
+    minus(index) {
+      this.$store.commit("minus", index);
+      this.computemoney();
+    },
+    add(index) {
+      this.$store.commit("add", index);
+      this.computemoney();
+    },
+    del(index) {
+      this.$store.commit("del", index);
     }
+  }
 };
 </script>
 <style>
+.kongbai {
+  width: 100%;
+  height: 110px;
+}
+.contentcontainer {
+  overflow: auto;
+}
 .cart-item-container {
   background: #eeeeee;
   margin-top: 50px;
@@ -219,7 +244,7 @@ export default {
 }
 .cart-head {
   padding-bottom: 50px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 50px;
@@ -229,6 +254,7 @@ export default {
   padding: 0 20px;
   line-height: 45px;
   border-bottom: 1px solid #eeeeee;
+  z-index: 9999;
 }
 .cart-title {
   font-size: 20px;
@@ -382,8 +408,8 @@ export default {
   background: white;
   width: 100%;
   height: 53px;
-  bottom: 55px;
-  position: absolute;
+  bottom: 54px;
+  position: fixed;
   z-index: 2;
   display: flex;
   align-items: center;
