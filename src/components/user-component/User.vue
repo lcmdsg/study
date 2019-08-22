@@ -52,10 +52,10 @@ export default {
           this.$emit.componentId = "user";
           break;
         case 1:
-          this.$emit.componentId = "usermail";
+          this.$emit.componentId = "userphone";
           break;
         case 2:
-          this.$emit.componentId = "userphone";
+          this.$emit.componentId = "usermail";
           break;
       }
       this.$emit("sindex", this.$emit.componentId);
