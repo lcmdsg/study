@@ -7,7 +7,7 @@
             src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png"
           />
         </div>
-        <router-link to="/search">
+        <router-link to="/search" class="router-link-width">
           <div class="search-click">
             <img src="../../assets/search.png" id="tab-bar-item-img" />
 
@@ -89,14 +89,17 @@ export default {
       this.index = i;
       this.$emit("navclick", i);
       if (this.index > 0) {
-        let a=event.clientX-event.target.offsetLeft;
-        this.$refs.navwrap.scrollLeft = (event.clientX-a);
+        // let a=event.clientX-event.target.offsetLeft;
+        this.$refs.navwrap.scrollLeft = event.target.offsetLeft;
       }
     }
   }
 };
 </script>
 <style>
+.router-link-width{
+  width: 65%;
+}
 .topcontainer {
   width: 100%;
   position: fixed;
@@ -131,7 +134,7 @@ a:visited {
 }
 .searchimg {
   margin-left: 8px;
-  width: 78px;
+  width: 19%;
   height: 44px;
   margin-top: 22px;
   /* height: 17px; */
@@ -140,8 +143,7 @@ a:visited {
   width: 100%;
 }
 .search-click {
-  padding: 0 30px;
-  width: 270px;
+  padding: 0 0px;
   height: 33px;
   background: #ededed;
   color: #666;
@@ -150,6 +152,9 @@ a:visited {
   border-radius: 2px;
   display: flex;
   align-items: center;
+}
+.search-text{
+  width: 100%;
 }
 .register {
   width: 38px;
@@ -162,7 +167,7 @@ a:visited {
   font-size: 13px;
 }
 .search-my {
-  width: 40px;
+  width: 11%;
 }
 .active1 {
   border-bottom: 2px solid #b4282d;
