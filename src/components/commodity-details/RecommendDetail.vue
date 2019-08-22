@@ -57,7 +57,7 @@ import store from "../store/index.js";
 // import axios from "axios";
 
 export default {
-  props: ["index"],
+  // props: ["index"],
   store: store,
   computed: {
     productnewlist() {

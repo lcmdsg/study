@@ -5,12 +5,16 @@
         <img src="../../assets/yanxuan-icon.png" alt />
       </div>
       <div
-        class="user-email-login"
-        v-for="(item, i) in tabList"
-        :key="i"
-        @click="tabClick(i,$event)"
+        class="user-email-login" 
+        @click="tabClick(1,$event)"
       >
-        <div class="el-icon-message" :class="{'active':index==i}">{{item}}</div>
+        <div class="el-icon-message" :class="{'active':index==i}">手机账号登录</div>
+      </div>
+            <div
+        class="user-phone-login" 
+        @click="tabClick(2,$event)"
+      >
+        <div class="el-icon-message" :class="{'active':index==i}">邮箱账号登录</div>
       </div>
       <div class="user-footer">
         <div class="user-footer-wrap user-footer-border">
@@ -37,7 +41,7 @@ export default {
   data() {
     return {
       index: 0,
-      tabList: ["手机号快速登录", "邮箱账号登录"]
+      i:1
     };
   },
   methods: {
