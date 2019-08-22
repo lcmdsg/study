@@ -39,9 +39,7 @@ export default {
     },
     login(){
       if(this.message&&this.message1){
-        this.$router.push("/");
-        this.message1="";
-        this.message=""
+        this.$router.push("/")
       }else{
         alert("请输入")
       }
@@ -51,7 +49,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
 * {
   margin: 0;
   padding: 0;

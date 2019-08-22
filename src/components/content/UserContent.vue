@@ -103,6 +103,7 @@ export default {
   border-radius: 2px;
   line-height: 50px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .user-footer {
