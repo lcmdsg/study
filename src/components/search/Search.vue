@@ -76,7 +76,7 @@ a {
   height: 246px;
 }
 
-.grow-hard{
+.grow-hard {
   height: 480px;
   background: #eee;
 }
@@ -105,7 +105,9 @@ a {
 }
 
 .input-wrap input {
-  width: 299px;
+  position: absolute;
+  top: 12px;
+width: 70%;
   border: none;
   background: #f4f4f4;
   line-height: 20px;
