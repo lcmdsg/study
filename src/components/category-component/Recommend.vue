@@ -38,13 +38,14 @@ export default {
 <style>
 .content-wrap {
   position: static;
-  margin-left:40px;
+  margin-left: 40px;
   width: 333px;
   height: 100%;
 }
 
 .content-block {
   padding: 16px;
+  margin-bottom: 54px;
 }
 
 .content-title-img {
