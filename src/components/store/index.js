@@ -84,8 +84,8 @@ const store = new Vuex.Store({
                 state.goodList[index].count=1
             }
         },
-        aa(state,item){
-            state.productnewlist=item
+        aa(state,a){
+            state.productnewlist=a
             // console.log(state.productnewlist)
         }
     }

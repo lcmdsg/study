@@ -185,6 +185,9 @@ export default {
 };
 </script>
 <style>
+.contentcontainer{
+  overflow: auto
+}
 .cart-item-container{
   background: #EEEEEE;
   margin-top: 50px;
@@ -370,8 +373,8 @@ export default {
   background: white;
   width: 100%;
   height: 53px;
-  bottom: 55px;
-  position: absolute;
+  bottom: 54px;
+  position: fixed;
   z-index: 2;
   display: flex;
   align-items: center;
