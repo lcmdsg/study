@@ -172,6 +172,7 @@ export default {
   padding-top: 44px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start
 }
 
 .content-nav {

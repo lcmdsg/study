@@ -56,8 +56,8 @@ export default {
         // recommendswiperList4:[],
         swiperOption: {
         autoplay: false,
-        loop: true,
-        loopAdditionalSlides: 4,
+        loop: false,
+        loopAdditionalSlides: 3,
         pagination: {
           el: ".swiper-pagination1"
         }
