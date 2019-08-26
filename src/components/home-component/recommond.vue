@@ -1,7 +1,7 @@
 <template>
   <div class="middlecontent">
     <!-- 轮播图 -->
-    <a href="#backtotop"><img class="backtop" src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-f502426678.png"></a>
+    <!-- <a href="#backtotop"><img  class="backtop" src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-f502426678.png"></a> -->
     <div class="myswiper" id="backtotop">
       <swiper :options="swiperOption" ref="mySwiper">
         <!-- slides -->
@@ -275,20 +275,10 @@ export default {
     computed:{
    
   },
-  methods: {
-  //  scrollTop(){
-  //     this.scroll1 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  //     if(this.scroll1>700){
-  //       this.aa=true
-  //     }else{
-  //       this.aa=false
-  //     }
-  //     console.log(this.scroll1);
-  //   }
-  },
+  
+
   data() {
     return {
-      aa:false,
       scroll1:0,
       lastfourlist1: [],
       lastfourlist2: [],
@@ -403,7 +393,9 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.scrollTop)
+   
+  window.addEventListener('scroll', this.handleScroll);
+
     let that = this;
     axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
       // console.log(res.data.list);
@@ -433,6 +425,10 @@ export default {
 };
 </script>
 <style>
+.middlecontent{
+  width: 100%;
+  overflow: auto;
+}
 .swiper-slide {
   display: flex;
   flex-shrink: 0;

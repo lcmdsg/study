@@ -1,5 +1,6 @@
 <template>
   <div class="homeccc">
+    <img v-show="scrollTop1>1000" @click="backTop" class="backtop" src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-f502426678.png">
     <content-tab v-on:navclick="navclick"></content-tab>
     <div class="homecontainer">
       <component :is="componentId"></component>
@@ -22,7 +23,8 @@ export default {
   data: function() {
     return {
       componentId: "recommond",
-      transcontent: "left"
+      transcontent: "left",
+      scrollTop1:0
     };
   },
   components: {
@@ -37,9 +39,11 @@ export default {
     digital,
     feature
   },
-  // mounted() {
-  //   window.addEventListener("scroll", this.scrollToTop);
-  // },
+ 
+  
+  mounted() {
+    document.querySelector(".homecontainer").addEventListener("scroll", this.scrollToTop)
+  },
   // destroyed(){
   //   window.addEventListener("scroll", this.scrollToTop);
   // },
@@ -85,8 +89,13 @@ export default {
       }
       this.i = i;
     },
+      scrollToTop () {
+    this.scrollTop1 = document.querySelector(".homecontainer").scrollTop
+    
+  
+  },
     backTop() {
-      document.documentElement.scrollTop = document.body.scrollTop = 0;
+      document.querySelector(".homecontainer").scrollTop = 0;
     }
   }
 };

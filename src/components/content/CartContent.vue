@@ -139,18 +139,18 @@ export default {
     seen() {
       return this.$store.state.seen;
     },
-    totalMoney() {
-      return this.$store.getters.totalMoney;
-    },
-    totalcount() {
-      return this.$store.getters.totalcount;
-    }
+    // totalMoney() {
+    //   return this.$store.getters.totalMoney;
+    // },
+    // totalcount() {
+    //   return this.$store.getters.totalcount;
+    // }
   },
 
   methods: {
     computemoney() {
       this.money = 0;
-      this.count = 0; //每次遍历商品之前对总金额进行清零
+      this.count = 0; 
       this.goodList.forEach(item => {
         //遍历商品，如果选中就进行加个计算，然后累加
         if (item.checked) {
@@ -160,11 +160,7 @@ export default {
       });
     },
     selectitem(item) {
-      //  this.aa
-      //  =!this.aa
       if (typeof item.checked == "undefined") {
-        //检测属性是否存在
-        //Vue.set(item, "checked", true);
         this.$set(item, "checked", true); //局部注册
       } else {
         item.checked = !item.checked; //状态取反

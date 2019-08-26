@@ -16,7 +16,7 @@
     <div class="content">
       <!-- 导航栏 -->
       <ul class="content-nav">
-        <li class="content-item" v-for="(item, i) in tabList" :key="i" @click="tabClick(i,$event)">
+        <li class="content-item" v-for="(item, i) in tabList" :key="i" @click="tabClick(i)">
           <span class="content-item-text" :class="{'active':index==i}">{{item}}</span>
         </li>
       </ul>

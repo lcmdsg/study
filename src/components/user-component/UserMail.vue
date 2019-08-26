@@ -6,10 +6,10 @@
       </div>
       <div class="user-content-login">
         <div class="user-content-number">
-          <input class="user-content-input1" type="email" placeholder="邮箱账号" v-model="message"/>
+          <input class="user-content-input1" type="email" placeholder="邮箱账号" v-model="message"/><div v-show="this.message" @click="xxxx" class="xx">x</div>
         </div>
         <div class="user-content-number">
-          <input class="user-content-input2" type="password" placeholder="密码" v-model="message1" />
+          <input class="user-content-input2" type="password" placeholder="密码" v-model="message1" /><div v-show="this.message1" @click="xxxxx" class="xx">x</div>
         </div>
         <div class="user-content-wrap">
           <span class="user-content-item1">注册账号</span>
@@ -37,6 +37,12 @@ export default {
     backtoindex() {
       this.$emit("sindex", "user");
     },
+    xxxx(){
+      this.message=""
+    },
+    xxxxx(){
+      this.message1=""
+    },
     login(){
       if(this.message&&this.message1){
         this.$router.push("/")
@@ -55,7 +61,9 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-
+.xx{
+  margin-top: 14px
+}
 .user-container {
   width: 100%;
   height: 403px;
@@ -88,6 +96,7 @@ export default {
   width: 100%;
   line-height: 52px;
   border: none;
+  outline: none;
 }
 
 .user-content-input2 {
@@ -96,6 +105,7 @@ export default {
   border: none;
   border-top: 1px solid #c5cddb;
   border-bottom: 1px solid #c5cddb;
+  outline: none;
 }
 
 .user-content-wrap {

@@ -17,39 +17,39 @@ const store = new Vuex.Store({
         seen:true,
         detaillist:[],
         productnewlist:[],
-        Money:0,
-        count:0
+        // Money:0,
+        // count:0
     },
-    getters:{
-        totalcount (state) {
-           if(state.goodList.length>0){
-               let aa=state.goodList.map(function(c){
-                   return c.count
-               });
-               let b=aa.reduce(function(first,second){
-                   return first+second
-               })
-               return b
-           }else{
-               return 0;
-           }
+    // getters:{
+    //     totalcount (state) {
+    //        if(state.goodList.length>0){
+    //            let aa=state.goodList.map(function(c){
+    //                return c.count
+    //            });
+    //            let b=aa.reduce(function(first,second){
+    //                return first+second
+    //            })
+    //            return b
+    //        }else{
+    //            return 0;
+    //        }
            
-        },
-        totalMoney (state) {
-            if(state.goodList.length>0){
-                let aa=state.goodList.map(function(c){
-                    return c.count*c.nowprice;
-                });
-                let b=aa.reduce(function(first,second){
-                    return first+second
-                })
-                return b
-            }else{
-                return 0;
-            }
+    //     },
+    //     totalMoney (state) {
+    //         if(state.goodList.length>0){
+    //             let aa=state.goodList.map(function(c){
+    //                 return c.count*c.nowprice;
+    //             });
+    //             let b=aa.reduce(function(first,second){
+    //                 return first+second
+    //             })
+    //             return b
+    //         }else{
+    //             return 0;
+    //         }
             
-        },
-    },
+    //     },
+    // },
     mutations:{
         homeTabIndexChange(state,index){
             state.homeTabIndex=index
