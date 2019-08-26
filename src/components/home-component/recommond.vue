@@ -276,14 +276,20 @@ export default {
    
   },
   methods: {
-   scrollTop(){
-      this.scroll = document.documentElement.scrollTop ;
-      // console.log(this.scroll);
-    }
+  //  scrollTop(){
+  //     this.scroll1 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  //     if(this.scroll1>700){
+  //       this.aa=true
+  //     }else{
+  //       this.aa=false
+  //     }
+  //     console.log(this.scroll1);
+  //   }
   },
   data() {
     return {
-      scroll:0,
+      aa:false,
+      scroll1:0,
       lastfourlist1: [],
       lastfourlist2: [],
       lastfourlist3: [],
@@ -397,6 +403,7 @@ export default {
     };
   },
   mounted() {
+    window.addEventListener('scroll', this.scrollTop)
     let that = this;
     axios.get("../../../data/recommendtimeshopping.json").then(function(res) {
       // console.log(res.data.list);

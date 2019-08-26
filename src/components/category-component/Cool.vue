@@ -70,6 +70,7 @@ export default {
 
 .content-block {
   padding: 16px;
+  margin-bottom: 54px;
 }
 
 .content-title-img {

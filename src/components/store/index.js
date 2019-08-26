@@ -38,7 +38,7 @@ const store = new Vuex.Store({
         totalMoney (state) {
             if(state.goodList.length>0){
                 let aa=state.goodList.map(function(c){
-                    return c.count*c.nowprice
+                    return c.count*c.nowprice;
                 });
                 let b=aa.reduce(function(first,second){
                     return first+second
@@ -73,7 +73,7 @@ const store = new Vuex.Store({
         del(state,item, index){
             // if(item.checked){
                 state.goodList.splice(index, 1);
-                console.log(item.checked)
+                console.log(item.checked);
             // }
             
         },

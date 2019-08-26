@@ -25,7 +25,7 @@ export default {
      aa(index){
          this.$store.commit("aa",this.newproductList[index]);
          this.$router.push("recommenddetail");
-         console.log(this.index)
+        //  console.log(this.index)
         //  console.log(this.newproductList[index]);
      } 
     }
