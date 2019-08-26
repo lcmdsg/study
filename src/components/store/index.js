@@ -73,7 +73,7 @@ const store = new Vuex.Store({
         del(state,item, index){
             // if(item.checked){
                 state.goodList.splice(index, 1);
-                console.log(item.checked);
+                // console.log(item.checked);
             // }
             
         },
