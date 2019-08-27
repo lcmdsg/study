@@ -35,7 +35,7 @@
     <div class="xiala" @click="xiala">
       <img
         src="../../assets/jian-tou.png"
-        :class="[rotate?'fa fa-arrow-down go':'fa fa-arrow-down aa']"
+        :class="[rotate?'go':'aa']"
       />
     </div>
     <div class="shade" v-if="shadeshow">
@@ -90,7 +90,7 @@ export default {
       this.$emit("navclick", i);
       if (this.index > 0) {
         // let a=event.clientX-event.target.offsetLeft;
-        this.$refs.navwrap.scrollLeft = event.target.offsetLeft;
+        this.$refs.navwrap.scrollLeft = event.target.offsetLeft-13;
       }
     }
   }
